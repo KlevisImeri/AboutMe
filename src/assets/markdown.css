@@ -1,0 +1,176 @@
+/* Additional vertical padding used by kbd tag. */
+.py-5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.markdown {
+  @apply transition-colors duration-200;
+}
+
+.markdown a {
+  @apply transition-colors duration-150;
+}
+
+
+
+
+.markdown {
+  @apply text-gray-900 leading-normal break-words p-10;
+}
+
+.markdown > * + * {
+  @apply mt-0 mb-4;
+}
+
+.markdown li + li {
+  @apply mt-1;
+}
+
+.markdown li > p + p {
+  @apply mt-6;
+}
+
+.markdown strong {
+  @apply font-semibold;
+}
+
+.markdown a {
+  @apply text-blue-600 font-semibold;
+}
+
+.markdown strong a {
+  @apply font-bold;
+}
+
+.markdown h1 {
+  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h2 {
+  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+}
+
+.markdown h3 {
+  @apply leading-snug text-lg font-semibold mb-4 mt-6;
+}
+
+.markdown h4 {
+  @apply leading-none text-base font-semibold mb-4 mt-6;
+}
+
+.markdown h5 {
+  @apply leading-tight text-sm font-semibold mb-4 mt-6;
+}
+
+.markdown h6 {
+  @apply leading-tight text-sm font-semibold text-gray-600 mb-4 mt-6;
+}
+
+.markdown hr {
+  @apply border-t-3 border-gray-300 my-6;
+}
+
+.markdown blockquote {
+  @apply text-base border-l-4 border-gray-300 pl-4 pr-4 text-gray-600 m-2;
+}
+
+.markdown code {
+  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-5;
+}
+
+.markdown pre {
+  @apply bg-gray-100 rounded p-4;
+}
+
+.markdown pre code {
+  @apply block bg-transparent p-0 overflow-visible rounded-none;
+}
+
+.markdown ul {
+  @apply text-base pl-8 list-disc;
+}
+
+.markdown ol {
+  @apply text-base pl-8 list-decimal;
+}
+
+.markdown kbd {
+  @apply text-xs inline-block rounded border px-1 py-5 align-middle font-normal font-mono shadow;
+}
+
+.markdown table {
+  @apply text-base border-gray-600;
+}
+
+.markdown th {
+  @apply border py-1 px-3;
+}
+
+.markdown td {
+  @apply border py-1 px-3;
+}
+
+/* Override pygments style background color. */
+.markdown .highlight pre {
+  @apply bg-gray-100;
+}
+/* .markdown .highlight pre { */
+/*   @apply bg-gray-100 !important; */
+/* } */
+
+
+
+
+
+
+
+.dark .markdown {
+  @apply text-[#c9d1d9] bg-[#0d1117]; /* GitHub's dark text and background */
+}
+
+.dark .markdown a {
+  @apply text-[#58a6ff] hover:text-[#79c0ff]; /* GitHub's link colors */
+}
+
+.dark .markdown h1,
+.dark .markdown h2,
+.dark .markdown h3,
+.dark .markdown h4,
+.dark .markdown h5,
+.dark .markdown h6 {
+  @apply text-[#e6edf3]; /* GitHub's heading color */
+}
+
+.dark .markdown code,
+.dark .markdown pre {
+  @apply bg-[#161b22] text-[#c9d1d9]; /* GitHub's code block colors */
+}
+
+.dark .markdown blockquote {
+  @apply border-l-[#30363d] text-[#8b949e]; /* GitHub's blockquote colors */
+}
+
+.dark .markdown table,
+.dark .markdown th,
+.dark .markdown td {
+  @apply border-[#30363d]; /* GitHub's table border color */
+}
+
+.dark .markdown hr {
+  @apply border-t-[#30363d]; /* GitHub's HR color */
+}
+
+.dark .markdown kbd {
+  @apply bg-[#161b22] border-[#30363d] text-[#c9d1d9]; /* GitHub's kbd style */
+}
+
+.dark .markdown .highlight pre {
+  @apply bg-[#161b22] text-[#c9d1d9]; /* GitHub's code block background */
+}
+
+/* GitHub-style syntax highlighting (approximate) */
+.dark .markdown .hljs-keyword { @apply text-[#ff7b72]; }
+.dark .markdown .hljs-title { @apply text-[#d2a8ff]; }
+.dark .markdown .hljs-string { @apply text-[#a5d6ff]; }
+.dark .markdown .hljs-comment { @apply text-[#8b949e]; }
