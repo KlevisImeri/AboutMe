@@ -9,15 +9,17 @@ const md = new MarkdownIt({
   typographer: true,
 });
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const processedMarkdown = ResumeMarkdown.replace(
-  /<img src="(.*?)"/g,
+  /<img src="([^"]+)"/g,
   (match, imgPath) => {
-    const resolvedPath = new URL(imgPath, import.meta.url).href;
-    return `<img src="${resolvedPath}"`;
+    const fileName = imgPath.split("/").pop();
+    return `<img src="${baseUrl}/${fileName}"`;
   }
 );
 
-const compiledMarkdown = ref(md.render(ResumeMarkdown));
+const compiledMarkdown = ref(md.render(processedMarkdown));
 </script>
 
 <template>
