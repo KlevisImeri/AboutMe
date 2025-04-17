@@ -8,39 +8,77 @@
     <div>klevisimeri11@gmail.com | +36705384797</div>
   </div>
 
-  <img src="../../public/Portrait.jpg" 
-    alt="Portrait"
-    style="
-      position: absolute;
-      right: -0.01rem;
-      top: 50%;
-      transform: translateY(-34%);
-      width: 8rem;
-      height: 12.5rem;
-      object-fit: cover;
-      border-radius: 0.5rem;
-      border: 0.125rem solid #e0e0e0;
-    ">
+  <!-- <img src="../../public/Portrait.jpg"  -->
+  <!--   alt="Portrait" -->
+  <!--   style=" -->
+  <!--     position: absolute; -->
+  <!--     right: -0.01rem; -->
+  <!--     top: 50%; -->
+  <!--     transform: translateY(-34%); -->
+  <!--     width: 8rem; -->
+  <!--     height: 12.5rem; -->
+  <!--     object-fit: cover; -->
+  <!--     border-radius: 0.5rem; -->
+  <!--     border: 0.125rem solid #e0e0e0; -->
+  <!--   "> -->
 </div>
 
 ---
 #### Experience
-[**Theta Model Checking Framework Contributor**](https://github.com/ftsrg/theta) | *December 2024 – Present*
-- Optimized interpolation-based model checking (IMC) algorithms for bounded verification.
-- Validated algorithm improvements using the [SV-COMP](https://gitlab.com/sosy-lab/sv-comp/bench-defs) benchmark suite via BechExec, deploying testing workflows on [BME Cloud](https://cloud.bme.hu/) virtualized infrastructure to ensure scalability and reproducibility. 
+<br>
 
+[**Theta Model Checking Framework Contributor**](https://github.com/ftsrg/theta) | *December 2024 – Present* | Budapest BME
+- Designing and implementing a validator for C program witnesses under the [SV-COMP 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) format, leveraging product automata to verify reachability error properties and ensure formal soundness of verification results.
+- Collaborating closely with PhD researchers and contributors to navigate the framework’s complex codebase, ensuring alignment with formal methods and system architecture requirements.
+- Optimizing interpolation-based model checking (IMC) algorithms to accelerate bounded verification tasks, reducing computational overhead for complex program analyses.
+- Running performance benchmarks on [BME Cloud](https://cloud.bme.hu/) virtualized infrastructure using the SV-COMP witness suite, leveraging [BenchExec](https://github.com/sosy-lab/benchexec) for precise resource tracking and reproducible testing.
+<br>
 
-**Competitive Programmer**  | *January 2023 - Present*
+[**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – December 2024* | Budapest BME 
+- Assisted students with SQL and database concepts, including:
+     - Database Management Systems (DBMS) fundamentals,
+     - Entity-Relationship (ER) Modeling and schema design,
+     - Relational algebra and its translation to SQL queries,
+     - CRUD operations (Create, Read, Update, Delete) and advanced SQL commands,
+     - User authorization, privileges, and access control (e.g., GRANT/REVOKE permissions),
+     - Normalization and database design best practices,
+     - Data integrity constraints (primary/foreign keys, unique checks).
+- Published a [FAQ website](https://klevisimeri.github.io/DB-Lab/) to address common questions.
+- Reviewed lab entry tests for clarity and accuracy.
+<br>
+
+**Full-Stack Engineer – End-to-End Solutions** | *January 2025 - Present* | Stuttgart Online 
+- Developed and maintain a full-stack application to manage worker logs, calculate work hours, and determine wages for 
+[königs-villen immobilien gmbh](https://koenigs-villen-immobilien.de/). The product is an Internal-use platform.
+- Key Responsibilities:
+    - **Full-Stack Development:**
+      - Build UI components using Vue.js and develop RESTful APIs with C# (.NET Core).  
+      - Ensure smooth integration between front-end and back-end systems.
+    - **Database Management & Auditing:**
+      - Design and optimize SQLite database schemas.
+      - Conduct regular database audits and maintain snapshots.
+    - **CI/CD & Deployment:**  
+      - Implement automated CI/CD pipelines for testing and deployment.  
+      - Manage cloud-based deployments across workplace devices.
+    - **Version Control & Security:**
+      - Use GitHub for version control and collaborative development.  
+      - Enforce robust security measures including authentication, authorization, and encryption.
+    - **Reporting & Compliance:**
+      - Generated audit reports with GDPR-mandated documentation.
+      - Generate clear, professional audit documents and activity logs for compliance and payroll.
+<br>
+
+**Competitive Programmer** | *January 2023 – Present* | Budapest
 - Part of BME’s [Vprog](https://vprog.hu/) competitive programming group, achieving 2nd place in [ICPC Hungary](https://cs.bme.hu/icpc/posts/2024-10-01-icpc-hungary/) and advancing to [CERC 2023 regionals](https://cerc.acm.si/).
-- Developed strong skills in algorithms, data structures, runtime analysis, and efficient  implementation of them.
+- Deepened expertise in algorithms & data structures**, including:  
+  - **Data Structures**: Vectors, linked lists, binary trees, segment trees, Fenwick trees, Link/cut tree, B*-tree, adjacency lists/matrices for graphs ...
+  - **Graph Algorithms**: BFS, DFS, A*, Dijkstra’s, Floyd-Warshall, graph isomorphism, network flow (Ford-Fulkerson) ... 
+  - **Dynamic Programming**: Knapsack, LCS, bitmask DP ... 
+  - **Number Theory & Math**: Modular arithmetic, sieve algorithms, FFT, combinatorics ...
+  - **Other**: Mo’s algorithm, hashing, Divide-and-conquer ... 
 - Frequent participation in the [Codeforces](https://codeforces.com/) competitions.
 - Weekly participation in [Vprog Advance](https://vprog.hu/calendar/) (live sessions discussing algorithms with my peers at BME)
 - We also develop software and publish research. I've contributed to projects like [Qubo](https://github.com/bmevprog/qubo) and [San-Vitale](https://github.com/bmevprog/san-vitale).
-
-[**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – December 2024* 
-- Assisted students with SQL and database concepts, guiding lab assignments.
-- Published a [FAQ website](https://klevisimeri.github.io/DB-Lab/) to address common questions.
-- Reviewed lab entry tests for clarity and accuracy.
 
 ---
 #### MyProjects
@@ -64,7 +102,13 @@
 	- **User Interaction Design**: Used use case diagrams to capture user interactions.
 	- **Component Design**: Employed component diagrams to organize system dependencies.
 - Developed custom testing methods and a specific testing project language.
-- Swing was used as 
+- Swing was used for the UI. 
+
+[**BlochSphere**](https://github.com/KlevisImeri/BlochSphere/blob/main/BlochSphereSimulator.pdf) | Svelte, Bun, Vite.js, Three.js
+- Interactive quantum Bloch sphere simulator in browser. 
+- Supports matrix-vector ops, real-time 3D visualization, and custom JS scripting. 
+- Used Threlte + Math.js for rendering and computation.
+- This is work under development. You can find more information in the [specification](https://github.com/KlevisImeri/BlochSphere/blob/main/BlochSphereSimulator.pdf).
 
 [**CleanEdit**](https://github.com/KlevisImeri/CleanEdit) | TypeScript, Vue, Tailwind, C#, FFmpeg, Python 
 - A fast, web-based video editor.
@@ -86,7 +130,10 @@
 ---
 #### Skills
 <div style="text-align: center;"><i>General</i></div>
-<div style="text-align: center;"><div>DevOps | Cloud Computing | Testing: Verification & Validation</div> <br>
+<div style="text-align: center;"><div>DevOps | Full-Stack | Cloud Computing | Testing: Verification & Validation</div> <br>
+
+<div style="text-align: center;"><i>Spoken languages</i></div>
+<div style="text-align: center;">English – Fluent/Native-level |Albanian - Fluent | German - Basic</div> <br>
 
 <div style="text-align: center;"><i>Programming languages & domain specific languages:</i></div>
 <div style="text-align: center;">C/C++ | JavaScript/TypeScript | SQL/T-SQL | Java/Kotlin | C# | Python | Prolog | Lua</div> <br>
@@ -95,11 +142,11 @@
 <div style="text-align: center;">Oracle | MS SQL | SQLite</div> <br>
 
 <div style="text-align: center;"><i>OS development</i></div>
-<div style="text-align: center;">Linux | Windows10/11 | Android</div> <br>
+<div style="text-align: center;">Linux - Fedora | Windows10/11 | Android</div> <br>
 
 <div style="text-align: center;"><i>Libraries, Frameworks or Platforms</i></div>
-<div style="text-align: center;">Text: markdown, latex | C/C++: Raylib, OpenGL | Python: NumPy, Matplotlib, OpenCV, Panda, TensorFlow, Scikit-learn | JS/TS: NodeJS, Bun, Vue, Electron | C#: Entity Framework, ASP.NET Core | Java:  Spring, Swing, Log4j </div> <br>
- 
+<div style="text-align: center;">Text: markdown, latex | C/C++: Raylib, OpenGL | Python: NumPy, Matplotlib, OpenCV, Pandas, TensorFlow, Scikit-learn | JS/TS: NodeJS, Bun, Vue, Electron | C#: Entity Framework, ASP.NET Core | Java/Kotlin:  Spring, Swing, Log4j, Gradle </div> <br>
+
 <div style="text-align: center;"><i>Programing paradigms</i></div>
 <div style="text-align: center;">OOP | PROC</div>
 
