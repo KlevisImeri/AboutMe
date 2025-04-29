@@ -1,7 +1,7 @@
 <div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
-    <div>20, Male</div>
+    <!-- <div>20, Male</div> -->
     <div>
       <a href="https://github.com/KlevisImeri">https://github.com/KlevisImeri/</a>
     </div>
