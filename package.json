@@ -8,6 +8,7 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "deploy": "vite build && cd dist && git add . && git commit -m 'deploy' && git push",
     "type-check": "vue-tsc --build"
   },
   "dependencies": {

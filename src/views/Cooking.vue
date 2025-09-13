@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MarkdownRenderer from '@/components/MarkdownRenderer.vue'
-import ResumeMarkdown from '@/assets/Resume.md?raw'
+import CookingMarkdown from '@/assets/Cooking.md?raw'
 </script>
 
 <template>
-  <MarkdownRenderer :content="ResumeMarkdown" />
+  <MarkdownRenderer :content="CookingMarkdown" />
 </template>
