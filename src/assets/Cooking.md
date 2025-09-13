@@ -10,9 +10,9 @@
 
 #### These are the foods I can cook:
 - Chicken with many spices, bread and black tea
-- Rukola Salat with Parmixan cheese, Orange and Olive and Tomatoes
+- Rukola Salat with Parmixan cheese, Orange, Olive, Tomatoes and can corn 
 - Pasta Carbonara
-- Eeggs with milk, salam, back tea with lemon and white cheese
+- Eeggs with milk, salam, back tea with lemon and white cheesee
 - Pig meat with garlic and peper. 
 - Patatoes with white cheese and oragano + some type of meat (above)
 

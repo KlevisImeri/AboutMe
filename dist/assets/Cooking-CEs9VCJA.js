@@ -1,4 +1,4 @@
-import{_ as n}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DmsRPKt1.js";import{d as e,c as a,u as t,o}from"./index-BmeL3flB.js";const i=`<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as n}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-BrO0D3C7.js";import{d as e,c as a,u as o,o as t}from"./index-BrR9OJIa.js";const i=`<div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">
             Cooking Delicious Food Is One Of My Hobbies
@@ -10,9 +10,9 @@ import{_ as n}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DmsRPK
 
 #### These are the foods I can cook:
 - Chicken with many spices, bread and black tea
-- Rukola Salat with Parmixan cheese, Orange and Olive and Tomatoes
+- Rukola Salat with Parmixan cheese, Orange, Olive, Tomatoes and can corn 
 - Pasta Carbonara
-- Eeggs with milk, salam, back tea with lemon and white cheese
+- Eeggs with milk, salam, back tea with lemon and white cheesee
 - Pig meat with garlic and peper. 
 - Patatoes with white cheese and oragano + some type of meat (above)
 
@@ -20,4 +20,4 @@ import{_ as n}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DmsRPK
 - Doughuts
 - Banana
 - Sushi 
-`,m=e({__name:"Cooking",setup(s){return(c,r)=>(o(),a(n,{content:t(i)},null,8,["content"]))}});export{m as default};
+`,d=e({__name:"Cooking",setup(s){return(c,r)=>(t(),a(n,{content:o(i)},null,8,["content"]))}});export{d as default};
