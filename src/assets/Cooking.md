@@ -14,6 +14,7 @@
 - Pasta Carbonara
 - Eeggs with milk, salam, back tea with lemon and white cheese
 - Pig meat with garlic and peper. 
+- Patatoes with white cheese and oragano + some type of meat (above)
 
 #### Snakcs I need to buy:
 - Doughuts
