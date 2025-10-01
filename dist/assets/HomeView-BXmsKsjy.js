@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-BrO0D3C7.js";import{d as n,c as t,u as i,o as a}from"./index-BrR9OJIa.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DDY_Yh9Y.js";import{d as n,c as t,u as i,o as a}from"./index-CVxEyrsi.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
     <!-- <div>20, Male</div> -->

@@ -1,4 +1,4 @@
-<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DDY_Yh9Y.js";import{d as n,c as a,u as t,o}from"./index-CVxEyrsi.js";const i=`<div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">
             Cooking Delicious Food Is One Of My Hobbies
@@ -27,3 +27,4 @@
 - Banana
 - Sushi
 - Yougurt
+`,d=n({__name:"Cooking",setup(s){return(r,c)=>(o(),a(e,{content:t(i)},null,8,["content"]))}});export{d as default};
