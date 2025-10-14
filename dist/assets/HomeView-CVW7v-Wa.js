@@ -1,16 +1,23 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-PMKLE3Yd.js";import{d as n,c as t,u as i,o as a}from"./index-DrsPgIzc.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
-  <div style="display: inline-block; text-align: center;">
-    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
-    <div>
-      <a href="https://github.com/KlevisImeri">https://github.com/KlevisImeri/</a>
-    </div>
-    <div>klevisimeri11@gmail.com | +36705384797</div>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CVVbz7MS.js";import{d as n,c as t,u as i,o as a}from"./index-pMpTH3Vl.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
+
+<div style="display: inline-block; text-align: center;">
+  <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
+  
+  <div>
+    <a href="https://aboutme.klevis.xyz/">https://aboutme.klevis.xyz/</a>
   </div>
+  
+  <div style="margin-top: 0.5em; font-size: 1rem;">
+    <span>klevisimeri11@gmail.com</span> 
+    <span style="color: #ccc; margin: 0 0.7em;">|</span>
+    <span>+36 70 538 4797</span>
+    <span style="color: #ccc; margin: 0 0.7em;">|</span>
+    <a href="https://github.com/KlevisImeri/" style="text-decoration: none; color: #333; font-weight: normal;">
+      github.com/KlevisImeri
+    </a>
+  </div>
+</div>
 
-  <!-- Portrait image (optional) -->
-  <!-- <img src="../../public/Portrait.jpg" alt="Portrait" style="..."> -->
-
-  <!-- Quote placed below for mobile-friendly view -->
   <div style="
       margin-top: 1rem;
       font-size: 0.9rem;
@@ -48,7 +55,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-PMKLE3
 - Collaborating closely with PhD researchers and contributors to navigate the framework’s complex codebase, ensuring alignment with formal methods and system architecture requirements.  
 - **Key contributions:**
   - **Model Checking Portfolio Optimization** — enhancing portfolio efficiency by transferring partial results between algorithms such as CEGAR (Expl and Pred), BMC, KIND, and IMC, while introducing a novel stopping heuristic (*TDK project, ongoing thesis work*).  
-  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) Implementation** — integrating a new witness format using the product automaton of XCFAs. <a href="/AboutMe/witness-theta-paper.pdf" target="_blank" class="text-blue-400">(View Paper)</a>  
+  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) Implementation** — integrating a new witness format using the product automaton of XCFAs. <a href="/witness-theta-paper.pdf" target="_blank" class="text-blue-400">(View Paper)</a>  
   - **Interpolation-based Model Checking (IMC)** — optimizing IMC algorithms to accelerate bounded verification and reduce computational overhead.  
 - All implementations were benchmarked on the [**Otheta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
@@ -77,7 +84,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-PMKLE3
 <br>
 
 
-[**Database Administrator**](https://www.db.bme.hu/databases/) | *May 2025 – Present* | Budapest [WEBváltó Kft](https://www.webvalto.hu/en/main-page/)  
+**Database Administrator** | *May 2025 – Present* | Budapest [WEBváltó Kft](https://www.webvalto.hu/en/main-page/)  
 - Training focused on managing and maintaining **Oracle Databases**.  
 - Administering Oracle databases, including:  
   - Managing tablespaces, users, and roles  
@@ -93,7 +100,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-PMKLE3
 
 
 **Competitive Programmer** | *January 2023 – Present* | Budapest
-- Part of BME’s [Vprog](https://vprog.hu/) competitive programming group, achieving 2nd place in [ICPC Hungary](https://cs.bme.hu/icpc/posts/2024-10-01-icpc-hungary/) and advancing to [CERC 2023 regionals](https://cerc.acm.si/).
+- Part of BME’s [Vprog](https://vprog.hu/) competitive programming group, achieving 2nd place in [ICPC Hungary](https://cs.bme.hu/icpc/) and advancing to [CERC 2023 regionals](https://cerc.acm.si/).
 - **Deepened expertise in algorithms & data structures**, including:  
   - **Data Structures**: Vectors, linked lists, binary trees, segment trees, Fenwick trees, Link/cut tree, B*-tree, adjacency lists/matrices for graphs ...
   - **Graph Algorithms**: BFS, DFS, A*, Dijkstra’s, Floyd-Warshall, graph isomorphism, network flow (Ford-Fulkerson) ... 

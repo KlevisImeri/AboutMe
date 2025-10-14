@@ -1,16 +1,23 @@
 <div style="position: relative; margin: 0 auto; text-align: center;">
-  <div style="display: inline-block; text-align: center;">
-    <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
-    <div>
-      <a href="https://github.com/KlevisImeri">https://github.com/KlevisImeri/</a>
-    </div>
-    <div>klevisimeri11@gmail.com | +36705384797</div>
+
+<div style="display: inline-block; text-align: center;">
+  <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
+  
+  <div>
+    <a href="https://aboutme.klevis.xyz/">https://aboutme.klevis.xyz/</a>
   </div>
+  
+  <div style="margin-top: 0.5em; font-size: 1rem;">
+    <span>klevisimeri11@gmail.com</span> 
+    <span style="color: #ccc; margin: 0 0.7em;">|</span>
+    <span>+36 70 538 4797</span>
+    <span style="color: #ccc; margin: 0 0.7em;">|</span>
+    <a href="https://github.com/KlevisImeri/" style="text-decoration: none; color: #333; font-weight: normal;">
+      github.com/KlevisImeri
+    </a>
+  </div>
+</div>
 
-  <!-- Portrait image (optional) -->
-  <!-- <img src="../../public/Portrait.jpg" alt="Portrait" style="..."> -->
-
-  <!-- Quote placed below for mobile-friendly view -->
   <div style="
       margin-top: 1rem;
       font-size: 0.9rem;
