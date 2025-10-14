@@ -1,4 +1,17 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CVVbz7MS.js";import{d as n,c as t,u as i,o as a}from"./index-pMpTH3Vl.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CV6xB29M.js";import{d as n,c as t,u as i,o as a}from"./index-CI-PNi-y.js";const s=`<style>
+@media (max-width: 600px) {
+    .contact-item {
+        display: block !important; 
+        margin: 0.2em 0 !important; 
+    }
+    
+    .separator {
+        display: none !important; 
+    }
+}
+</style>
+
+<div style="position: relative; margin: 0 auto; text-align: center;">
 
 <div style="display: inline-block; text-align: center;">
   <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
@@ -8,11 +21,11 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CVVbz7
   </div>
   
   <div style="margin-top: 0.5em; font-size: 1rem;">
-    <span>klevisimeri11@gmail.com</span> 
-    <span style="color: #ccc; margin: 0 0.7em;">|</span>
-    <span>+36 70 538 4797</span>
-    <span style="color: #ccc; margin: 0 0.7em;">|</span>
-    <a href="https://github.com/KlevisImeri/" style="text-decoration: none; color: #333; font-weight: normal;">
+    <span class="contact-item">klevisimeri11@gmail.com</span> 
+    <span class="separator" style="color: #ccc; margin: 0 0.7em;">|</span>
+    <span class="contact-item">+36 70 538 4797</span>
+    <span class="separator" style="color: #ccc; margin: 0 0.7em;">|</span>
+    <a href="https://github.com/KlevisImeri/" class="contact-item" style="text-decoration: none; color: #333; font-weight: normal;">
       github.com/KlevisImeri
     </a>
   </div>
@@ -204,4 +217,4 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CVVbz7
 <div style="text-align: center;"><i>Programming paradigms</i></div>
 <div style="text-align: center;">OOP | PROC</div>
 
-`,m=n({__name:"HomeView",setup(s){return(o,l)=>(a(),t(e,{content:i(r)},null,8,["content"]))}});export{m as default};
+`,m=n({__name:"HomeView",setup(r){return(o,l)=>(a(),t(e,{content:i(s)},null,8,["content"]))}});export{m as default};
