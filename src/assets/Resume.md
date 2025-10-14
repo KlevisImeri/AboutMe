@@ -48,7 +48,7 @@
 - Collaborating closely with PhD researchers and contributors to navigate the framework’s complex codebase, ensuring alignment with formal methods and system architecture requirements.  
 - **Key contributions:**
   - **Model Checking Portfolio Optimization** — enhancing portfolio efficiency by transferring partial results between algorithms such as CEGAR (Expl and Pred), BMC, KIND, and IMC, while introducing a novel stopping heuristic (*TDK project, ongoing thesis work*).  
-  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) Implementation** — integrating a new witness format using the product automaton of XCFAs. <a href="/AboutMe/witness-theta-paper.pdf" target="_blank" class="text-blue-400">(View Paper)</a>  
+  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) Implementation** — integrating a new witness format using the product automaton of XCFAs. <a href="/witness-theta-paper.pdf" target="_blank" class="text-blue-400">(View Paper)</a>  
   - **Interpolation-based Model Checking (IMC)** — optimizing IMC algorithms to accelerate bounded verification and reduce computational overhead.  
 - All implementations were benchmarked on the [**Otheta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
@@ -77,7 +77,7 @@
 <br>
 
 
-[**Database Administrator**](https://www.db.bme.hu/databases/) | *May 2025 – Present* | Budapest [WEBváltó Kft](https://www.webvalto.hu/en/main-page/)  
+**Database Administrator** | *May 2025 – Present* | Budapest [WEBváltó Kft](https://www.webvalto.hu/en/main-page/)  
 - Training focused on managing and maintaining **Oracle Databases**.  
 - Administering Oracle databases, including:  
   - Managing tablespaces, users, and roles  
@@ -93,7 +93,7 @@
 
 
 **Competitive Programmer** | *January 2023 – Present* | Budapest
-- Part of BME’s [Vprog](https://vprog.hu/) competitive programming group, achieving 2nd place in [ICPC Hungary](https://cs.bme.hu/icpc/posts/2024-10-01-icpc-hungary/) and advancing to [CERC 2023 regionals](https://cerc.acm.si/).
+- Part of BME’s [Vprog](https://vprog.hu/) competitive programming group, achieving 2nd place in [ICPC Hungary](https://cs.bme.hu/icpc/) and advancing to [CERC 2023 regionals](https://cerc.acm.si/).
 - **Deepened expertise in algorithms & data structures**, including:  
   - **Data Structures**: Vectors, linked lists, binary trees, segment trees, Fenwick trees, Link/cut tree, B*-tree, adjacency lists/matrices for graphs ...
   - **Graph Algorithms**: BFS, DFS, A*, Dijkstra’s, Floyd-Warshall, graph isomorphism, network flow (Ford-Fulkerson) ... 
