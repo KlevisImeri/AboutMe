@@ -56,21 +56,11 @@
 - Developed and maintain a full-stack application to manage worker logs, calculate work hours, and determine wages for 
 [königs-villen immobilien gmbh](https://koenigs-villen-immobilien.de/). The product is an Internal-use platform.
 - Key Responsibilities:
-    - **Full-Stack Development:**
-        - Build UI components using Vue.js and develop RESTful APIs with C# (.NET Core).  
-        - Ensure smooth integration between front-end and back-end systems.
-    - **Database Management & Auditing:**
-        - Design and optimize SQLite database schemas.
-        - Conduct regular database audits and maintain snapshots.
-    - **CI/CD & Deployment:**  
-        - Implement automated CI/CD pipelines for testing and deployment.  
-        - Manage cloud-based deployments across workplace devices.
-    - **Version Control & Security:**
-        - Use GitHub for version control and collaborative development.  
-        - Enforce robust security measures including authentication, authorization, and encryption.
-    - **Reporting & Compliance:**
-        - Generated audit reports with GDPR-mandated documentation.
-        - Generate clear, professional audit documents and activity logs for compliance and payroll.
+    - **Full-Stack Development:** Build UI components using Vue.js and develop RESTful APIs with C# (.NET Core). Ensure smooth integration between front-end and back-end systems.
+    - **Database Management & Auditing:** Design and optimize SQLite database schemas. Conduct regular database audits and maintain snapshots.
+    - **CI/CD & Deployment:**  Implement automated CI/CD pipelines for testing and deployment.  Manage cloud-based deployments across workplace devices.
+    - **Version Control & Security:** Use GitHub for version control and collaborative development.  Enforce robust security measures including authentication, authorization, and encryption.
+    - **Reporting & Compliance:** Generated audit reports with GDPR-mandated documentation. Generate clear, professional audit documents and activity logs for compliance and payroll.
 <br>
 
 [**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Present* | Budapest BME 

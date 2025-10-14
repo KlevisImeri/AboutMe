@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-BJmEOpoQ.js";import{d as n,c as t,u as i,o as a}from"./index-Dq7PtCq4.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-PMKLE3Yd.js";import{d as n,c as t,u as i,o as a}from"./index-DrsPgIzc.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
     <div>
@@ -56,21 +56,11 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-BJmEOp
 - Developed and maintain a full-stack application to manage worker logs, calculate work hours, and determine wages for 
 [königs-villen immobilien gmbh](https://koenigs-villen-immobilien.de/). The product is an Internal-use platform.
 - Key Responsibilities:
-    - **Full-Stack Development:**
-        - Build UI components using Vue.js and develop RESTful APIs with C# (.NET Core).  
-        - Ensure smooth integration between front-end and back-end systems.
-    - **Database Management & Auditing:**
-        - Design and optimize SQLite database schemas.
-        - Conduct regular database audits and maintain snapshots.
-    - **CI/CD & Deployment:**  
-        - Implement automated CI/CD pipelines for testing and deployment.  
-        - Manage cloud-based deployments across workplace devices.
-    - **Version Control & Security:**
-        - Use GitHub for version control and collaborative development.  
-        - Enforce robust security measures including authentication, authorization, and encryption.
-    - **Reporting & Compliance:**
-        - Generated audit reports with GDPR-mandated documentation.
-        - Generate clear, professional audit documents and activity logs for compliance and payroll.
+    - **Full-Stack Development:** Build UI components using Vue.js and develop RESTful APIs with C# (.NET Core). Ensure smooth integration between front-end and back-end systems.
+    - **Database Management & Auditing:** Design and optimize SQLite database schemas. Conduct regular database audits and maintain snapshots.
+    - **CI/CD & Deployment:**  Implement automated CI/CD pipelines for testing and deployment.  Manage cloud-based deployments across workplace devices.
+    - **Version Control & Security:** Use GitHub for version control and collaborative development.  Enforce robust security measures including authentication, authorization, and encryption.
+    - **Reporting & Compliance:** Generated audit reports with GDPR-mandated documentation. Generate clear, professional audit documents and activity logs for compliance and payroll.
 <br>
 
 [**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Present* | Budapest BME 
