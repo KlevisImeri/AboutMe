@@ -1,4 +1,4 @@
-<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-BJmEOpoQ.js";import{d as n,c as t,u as i,o as a}from"./index-Dq7PtCq4.js";const r=`<div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">Klevis Imeri</div>
     <div>
@@ -207,3 +207,4 @@
 <div style="text-align: center;"><i>Programming paradigms</i></div>
 <div style="text-align: center;">OOP | PROC</div>
 
+`,m=n({__name:"HomeView",setup(s){return(o,l)=>(a(),t(e,{content:i(r)},null,8,["content"]))}});export{m as default};
