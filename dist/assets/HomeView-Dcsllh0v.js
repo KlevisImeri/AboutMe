@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-Bb5pI558.js";import{d as n,c as t,u as i,o as a}from"./index-BcMEjzTU.js";const s=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-k0VltpzT.js";import{d as n,c as t,u as i,o as a}from"./index-DlnbxO8t.js";const s=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -67,8 +67,8 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-Bb5pI5
 - Enhancing the efficiency and extending the capabilities of the [**Theta**](https://github.com/ftsrg/theta) validator developed at [**ftsrg BME**](https://ftsrg.mit.bme.hu/hu/), under the supervision of [**Ádám Zsófi**](https://adamzsofi.github.io/). 
 - Collaborating closely with PhD researchers and contributors to navigate the framework’s complex codebase, ensuring alignment with formal methods and system architecture requirements.  
 - **Key contributions:**
-  - **Model Checking Portfolio Optimization** — enhancing portfolio efficiency by transferring partial results between algorithms such as CEGAR (Expl and Pred), BMC, KIND, and IMC, while introducing a novel stopping heuristic (*TDK [(View Paper)](https://aboutme.klevis.xyz/theses.pdf], ongoing thesis work*).
-  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) Implementation** — integrating a new witness format using the product automaton of XCFAs. [(View Paper)](https://aboutme.klevis.xyz/witness-theta-paper.pdf]
+  - **Model Checking Portfolio Optimization** — enhancing portfolio efficiency by transferring partial results between algorithms such as CEGAR (Expl and Pred), BMC, KIND, and IMC, while introducing a novel stopping heuristic (TDK [(View Paper)](https://aboutme.klevis.xyz/theses.pdf), ongoing thesis work*).
+  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf) Implementation** — integrating a new witness format using the product automaton of XCFAs. [(View Paper)](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
   - **Interpolation-based Model Checking (IMC)** — optimizing IMC algorithms to accelerate bounded verification and reduce computational overhead.  
 - All implementations were benchmarked on the [**Otheta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
