@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DoRM-Nzy.js";import{d as n,c as t,u as i,o as a}from"./index-Drk_uK30.js";const r=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-C16swJ5z.js";import{d as n,c as t,u as i,o as a}from"./index-DuupZ_Zs.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -75,7 +75,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DoRM-N
 
 *   **BSc Theses** | 2025
     - Expanded the TDK research into a full BSc Thesis. 
-    - [[View Theses]](https://aboutme.klevis.xyz/theses.pdf)
+    - [[View Theses]](https://aboutme.klevis.xyz/thesis.pdf)
 
 *   **Publication: San Vitale Challenge** | 2024
     *   *Automatic Reconstruction of Ancient Colored Glass Windows*

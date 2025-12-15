@@ -75,7 +75,7 @@
 
 *   **BSc Theses** | 2025
     - Expanded the TDK research into a full BSc Thesis. 
-    - [[View Theses]](https://aboutme.klevis.xyz/theses.pdf)
+    - [[View Theses]](https://aboutme.klevis.xyz/thesis.pdf)
 
 *   **Publication: San Vitale Challenge** | 2024
     *   *Automatic Reconstruction of Ancient Colored Glass Windows*
