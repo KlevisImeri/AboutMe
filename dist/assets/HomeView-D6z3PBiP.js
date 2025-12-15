@@ -1,4 +1,4 @@
-<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-DoRM-Nzy.js";import{d as n,c as t,u as i,o as a}from"./index-Drk_uK30.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -270,7 +270,7 @@ reports for Königs-Villen Immobilien GmbH.
 | Category | Skills |
 | :--- | :--- |
 | Languages | C/C++, Python, Java, C#, SQL, Verilog, TypeScript, Prolog, Lua |
-| Web & App | ASP\.NET Core, Entity Framework, Vue.js, Node.js, Spring, Electron |
+| Web & App | ASP\\.NET Core, Entity Framework, Vue.js, Node.js, Spring, Electron |
 | Data & AI | NumPy, Pandas, Scikit-learn, TensorFlow, OpenCV |
 | Systems & Tools | Linux (Fedora), Cisco IOS, LaTeX, Git, Raylib, OpenGL |
 | Theory | Formal Verification, Model Checking, Algorithm Optimization |
@@ -295,3 +295,4 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- <div style="text-align: center;"><i>Programming paradigms</i></div> -->
 <!-- <div style="text-align: center;">OOP | PROC</div> -->
 
+`,p=n({__name:"HomeView",setup(o){return(s,l)=>(a(),t(e,{content:i(r)},null,8,["content"]))}});export{p as default};
