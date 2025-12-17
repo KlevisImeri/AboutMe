@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-onE5F4Hs.js";import{d as n,c as t,u as i,o as a}from"./index-Z8GbeJ6i.js";const r=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-D5inoQ4j.js";import{d as n,c as t,u as i,o as a}from"./index-CJ6y-vOE.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -99,8 +99,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-onE5F4
 - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf)
 Implementation** — integrating a new witness format using the product automaton
 of XCFAs. [(View Report)](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
-- **Interpolation-based Model Checking (IMC)** — optimizing IMC algorithms to
-accelerate bounded verification and reduce computational overhead.  
+- Optimizing IMC in theta.
 - All implementations were benchmarked on the [**Theta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
 [**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Present* | Budapest BME 
@@ -140,6 +139,7 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- <br> -->
 <!---->
 <!---->
+<br>
 <br>
 <br>
 
