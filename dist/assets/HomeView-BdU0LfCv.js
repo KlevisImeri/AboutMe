@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-C16swJ5z.js";import{d as n,c as t,u as i,o as a}from"./index-DuupZ_Zs.js";const r=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-onE5F4Hs.js";import{d as n,c as t,u as i,o as a}from"./index-Z8GbeJ6i.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -61,12 +61,12 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-C16swJ
 
 
 ---
-#### Education
+#### [Education]
 | [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc| 7th Sem (last) | GPA: 4.93/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
 
 ---
-#### Research & Publications
+#### [Research & Publications]
 *   **1st Place -- Scientific Student Association Conference (TDK)** | 2025
     *   *BME, Faculty of Electrical Engineering and Informatics*
     *   **Paper:** "Improving Model Checking Portfolio Efficiency through Partial Result Transfer"
@@ -85,10 +85,10 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-C16swJ
 
 
 ---
-#### Experience
+#### [Experience]
 <br>
 
-**Software Formal Verification Researcher** | *December 2024 – Present* | Budapest BME  
+**Software Formal Verification Researcher** | *December 2024 – Present* | Budapest BME 
 - Enhancing the efficiency and extending the capabilities of the [**Theta**](https://github.com/ftsrg/theta) validator developed at [**ftsrg BME**](https://ftsrg.mit.bme.hu/hu/), under the supervision of [**Ádám Zsófi**](https://adamzsofi.github.io/). 
 - Collaborating closely with PhD researchers and contributors to navigate the framework’s complex codebase, ensuring alignment with formal methods and system architecture requirements.  
 - **Key contributions:**
@@ -98,10 +98,10 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-C16swJ
   1st Prize, BSc Thesis).
 - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf)
 Implementation** — integrating a new witness format using the product automaton
-of XCFAs. [(View Paper)](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
+of XCFAs. [(View Report)](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
 - **Interpolation-based Model Checking (IMC)** — optimizing IMC algorithms to
 accelerate bounded verification and reduce computational overhead.  
-- All implementations were benchmarked on the [**Otheta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
+- All implementations were benchmarked on the [**Theta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
 [**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Present* | Budapest BME 
 
@@ -171,7 +171,7 @@ reports for Königs-Villen Immobilien GmbH.
 
 
 ---
-#### My Side Projects
+#### [My Side Projects]
 
 [**SimFN**](https://github.com/KlevisImeri/SimFN) & [**Integrator2**](https://github.com/KlevisImeri/Integrator2) | Java,C/C++ 
 - A graphing calculator that takes string input to plot functions.
@@ -214,7 +214,7 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- > *Note:* **Many** other projects are available on my GitHub. -->
 
 ---
-#### Other Awards
+#### [Other Awards]
 
 <!-- *   **1st Place -- Scientific Student Association Conference (TDK)** | 2025 -->
 <!--     *   *BME, Faculty of Electrical Engineering and Informatics* -->
@@ -266,7 +266,7 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- - One of the **goals** in my life is to meet the **most amazing engineers** and **researchers** of our era. -->
 
 ---
-#### Skills
+#### [Skills]
 | Category | Skills |
 | :--- | :--- |
 | Languages | C/C++, Python, Java, C#, SQL, Verilog, TypeScript, Prolog, Lua |
