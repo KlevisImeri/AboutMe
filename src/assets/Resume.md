@@ -62,7 +62,7 @@
 
 ---
 #### [Education]
-| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated with Distinction | GPA: 4.94/5.00 | Stipendium Hungaricum Scholarship |
+| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated excellent with highest honours | GPA: 4.94/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
 
 ---

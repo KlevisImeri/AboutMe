@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-rjuqY4hm.js";import{d as n,c as t,u as i,o as a}from"./index-D1ZY42Xz.js";const r=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CE752o5r.js";import{d as n,c as t,u as i,o as a}from"./index-BkrLlq2n.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -62,7 +62,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-rjuqY4
 
 ---
 #### [Education]
-| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated with Distinction | GPA: 4.94/5.00 | Stipendium Hungaricum Scholarship |
+| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated excellent with highest honours | GPA: 4.94/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
 
 ---
