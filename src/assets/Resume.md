@@ -62,7 +62,7 @@
 
 ---
 #### [Education]
-| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc| 7th Sem (last) | GPA: 4.93/5.00 | Stipendium Hungaricum Scholarship |
+| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc| Graduated with Distinction | GPA: 4.94/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
 
 ---
