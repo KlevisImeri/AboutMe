@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-CzEju7Dx.js";import{d as n,c as t,u as i,o as a}from"./index-DBMmPqYT.js";const r=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-rjuqY4hm.js";import{d as n,c as t,u as i,o as a}from"./index-D1ZY42Xz.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -102,7 +102,7 @@ of XCFAs. [(View Report)](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
 - Optimizing IMC in theta.
 - All implementations were benchmarked on the [**Theta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
-[**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Present* | Budapest BME 
+[**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Januar 2026* | Budapest BME 
 
 - Mentored students in DBMS fundamentals, covering ER modeling, schema design,
 normalization, relational algebra, and advanced SQL querying (including access
