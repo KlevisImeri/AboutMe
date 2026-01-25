@@ -62,20 +62,25 @@
 
 ---
 #### [Education]
-| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated excellent with highest honours | GPA: 4.94/5.00 | Stipendium Hungaricum Scholarship |
+| [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated excellent with highest honours | GPA: 4.97/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
 
 ---
 #### [Research & Publications]
 *   **1st Place -- Scientific Student Association Conference (TDK)** | 2025
     *   *BME, Faculty of Electrical Engineering and Informatics*
-    *   **Paper:** "Improving Model Checking Portfolio Efficiency through Partial Result Transfer"
+    *   Paper: "Improving Model Checking Portfolio Efficiency through Partial Result Transfer"
     *   *Section: Software*
     *   [[View Paper]](https://tdk.bme.hu/conference/VIK/2025/sessions/sw/paper/Modellellenorzesi-portfoliok-hatekonysaganak)
 
-*   **BSc Theses** | 2025
+*   **BSc Thesis** | 2025
     - Expanded the TDK research into a full BSc Thesis. 
-    - [[View Theses]](https://aboutme.klevis.xyz/thesis.pdf)
+    - [[View Thesis]](https://aboutme.klevis.xyz/thesis.pdf)
+
+*   **Lab Report: Software Witness 2.0 Implementation** | 2025
+    * BME, Fault-Tolerant Systems Research Group (FTSRG)
+    * Integrated a new witness format using the product automaton of XCFAs into the Theta framework.
+    * [[View Report]](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
 
 *   **Publication: San Vitale Challenge** | 2024
     *   *Automatic Reconstruction of Ancient Colored Glass Windows*
@@ -89,20 +94,20 @@
 <br>
 
 **Software Formal Verification Researcher** | *December 2024 – Present* | Budapest BME 
-- Enhancing the efficiency and extending the capabilities of the [**Theta**](https://github.com/ftsrg/theta) validator developed at [**ftsrg BME**](https://ftsrg.mit.bme.hu/hu/), under the supervision of [**Ádám Zsófi**](https://adamzsofi.github.io/). 
+- Enhancing the efficiency and extending the capabilities of the [**Theta**](https://github.com/ftsrg/theta) validator developed at [**FTSRG at BME**](https://ftsrg.mit.bme.hu/hu/), under the supervision of [**Zsófia Ádám**](https://adamzsofi.github.io/). 
 - Collaborating closely with PhD researchers and contributors to navigate the framework’s complex codebase, ensuring alignment with formal methods and system architecture requirements.  
 - **Key contributions:**
   - **Model Checking Portfolio Optimization** — enhancing portfolio efficiency
   by transferring partial results between algorithms such as CEGAR (Expl and
   Pred), BMC, KIND, and IMC, while introducing a novel stopping heuristic (TDK
   1st Prize, BSc Thesis).
-- **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf)
-Implementation** — integrating a new witness format using the product automaton
-of XCFAs. [(View Report)](https://aboutme.klevis.xyz/witness-theta-paper.pdf)
-- Optimizing IMC in theta.
+  - **[Software Witness 2.0](https://www.sosy-lab.org/research/pub/2024-SPIN.Software_Verification_Witnesses_2.0.pdf)
+    Implementation** — integrating a new witness format using the product automaton
+    of XCFAs. 
+  - Optimizing IMC in Theta.
 - All implementations were benchmarked on the [**Theta BenchCloud**](http://benchcloud.mit.bme.hu:8088/benchcloud/webclient/master/info) infrastructure using the [**SV-Benchmarks**](https://gitlab.com/sosy-lab/benchmarking/sv-benchmarks) test suite, powered by [**BenchExec**](https://github.com/sosy-lab/benchexec) for precise, reproducible performance tracking.
 
-[**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – Januar 2026* | Budapest BME 
+[**DB Lab Instructor BME**](https://www.db.bme.hu/databases/) | *September 2024 – January 2026* | Budapest BME 
 
 - Mentored students in DBMS fundamentals, covering ER modeling, schema design,
 normalization, relational algebra, and advanced SQL querying (including access
@@ -110,8 +115,8 @@ control and integrity), while reviewing lab assessments for accuracy.
 <!-- - Published a [FAQ website](https://klevisimeri.github.io/DB-Lab/) to address common questions. -->
 <!-- <br> -->
 <!---->
-**Full-Stack Engineer** | *January 2025 - September 2025* | Germany Stuttgart Online and In-person during Summer
-- Developed and maintain a full-stack application using Vue.js and ASP.NET
+**Full-Stack Engineer** | *January 2025 – September 2025* | Germany Stuttgart Online and In-person during Summer
+- Developed and maintained a full-stack application using Vue.js and ASP.NET
 Core to manage worker logs, calculate wages, and generate GDPR-compliant audit
 reports for Königs-Villen Immobilien GmbH.
 
@@ -139,9 +144,6 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- <br> -->
 <!---->
 <!---->
-<br>
-<br>
-<br>
 
 **Competitive Programmer** | *January 2023 – Present* | Budapest
 - Part of BME’s [Vprog](https://vprog.hu/) competitive programming group, achieving 2nd place in [ICPC Hungary](https://cs.bme.hu/icpc/) and advancing to [CERC 2023 regionals](https://cerc.acm.si/).
