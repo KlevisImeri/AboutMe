@@ -61,9 +61,24 @@
 
 
 ---
+#### [Personal Data]
+| Name | Klevis Imeri |
+|:-----|:-------------|
+| Date of birth | 08.05.2004 |
+| Place of birth | Prishtina, Kosovo |
+| Nationality | Kosovar & Albanian |
+| Marital status | single |
+
+---
 #### [Education]
+| [ETH Zurich](https://ethz.ch/en.html) | Computer Science MSc | 2026.09 – ongoing |
+|:---------------------------------------|:----------------------|:-------------------|
+
 | [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated excellent with highest honours | GPA: 4.97/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
+
+| [Mileniumi i Tretë Gymnasium](https://mileniumi3.net/) | Secondary High School Diploma, Natural Sciences | 2019.09 – 2022.05 | Prishtinë, Kosovo | 1st of class |
+|:------------------------------------------------------|:-----------------------------------------------|:-------------------|:------------------|:-------------|
 
 ---
 #### [Research & Publications]
@@ -235,7 +250,7 @@ reports for Königs-Villen Immobilien GmbH.
 
 
 
-<!-- ##### High School -->
+#### [High School Awards]
 
 *   **1st Place -- National Physics Competition (Grade 12)** | 2022
     *   *Represented Kosovo in the International Physics Olympiad (IPhO) 2022 and the European Physics Olympiad (EuPhO) 2022.*
@@ -279,8 +294,25 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- <div style="text-align: center;"><i>General</i></div> -->
 <!-- <div style="text-align: center;"><div>DevOps | Full-Stack | Cloud Computing | Testing: Verification & Validation | Network Engineer | CyberOps </div> <br> -->
 <!---->
-<!-- <div style="text-align: center;"><i>Spoken languages</i></div> -->
-<!-- <div style="text-align: center;">English – Academic |Albanian - Native | German - Basic</div> <br> -->
+#### [Language Skills]
+| Language | Level | Certificate / Evidence |
+|:---------|:------|:-----------------------|
+| Albanian | Native | — |
+| English | Fluent (C2) | BSc studies fully in English; TOEFL iBT 107 (2022) |
+| German | Basic (A2) | Goethe-Zertifikat A2 — 88/100 |
+| Hungarian | Conversational | 3.5 years living in Budapest, Hungary |
+
+---
+#### [Duration of Studies]
+Master in Computer Science at ETH Zurich — 4 semesters (2 years), from September 2026.
+
+---
+#### [Reasons for Studying at ETH]
+ETH Zurich offers a world-class environment for computer science research, with strong groups in formal verification, systems, and theoretical computer science. My BSc thesis work on model checking portfolio efficiency and my ongoing research in formal verification align closely with ETH's strengths. Studying at ETH will allow me to deepen my expertise alongside leading researchers in the field.
+
+---
+#### [Future Plans]
+After completing my Master's degree, I plan to pursue a PhD in computer science, focusing on formal verification and software reliability. My long-term goal is to work in research or industry developing verified critical systems.
 <!---->
 <!-- <div style="text-align: center;"><i>Programming languages & domain specific languages:</i></div> -->
 <!-- <div style="text-align: center;">C/C++ | JavaScript/TypeScript | SQL/T-SQL | Java/Kotlin | C# | Python | Prolog | Lua | Verilog </div> <br> -->
