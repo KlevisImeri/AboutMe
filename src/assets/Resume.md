@@ -23,7 +23,7 @@
   <div style="margin-top: 0.5em; font-size: 1rem;">
     <span class="contact-item">klevisimeri11@gmail.com</span> 
     <span class="separator" style="color: #ccc; margin: 0 0.7em;">|</span>
-    <span class="contact-item">+36 70 538 4797</span>
+    <span class="contact-item">+383 44 165 634</span>
     <span class="separator" style="color: #ccc; margin: 0 0.7em;">|</span>
     <a href="https://github.com/KlevisImeri/" class="contact-item" style="text-decoration: none; color: #333; font-weight: normal;">
       github.com/KlevisImeri
