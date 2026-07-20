@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-B1SwqBhH.js";import{d as n,c as a,u as t,o}from"./index-D0NYF0ZF.js";const i=`<div style="position: relative; margin: 0 auto; text-align: center;">
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-Co2DT7yF.js";import{d as n,c as a,u as t,o}from"./index-CMITgit5.js";const i=`<div style="position: relative; margin: 0 auto; text-align: center;">
   <div style="display: inline-block; text-align: center;">
     <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5em;">
             Cooking Delicious Food Is One Of My Hobbies

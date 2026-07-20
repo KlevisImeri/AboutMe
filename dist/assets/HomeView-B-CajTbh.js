@@ -1,4 +1,4 @@
-import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-B1SwqBhH.js";import{d as n,c as t,u as i,o as a}from"./index-D0NYF0ZF.js";const r=`<style>
+import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-Co2DT7yF.js";import{d as n,c as t,u as i,o as a}from"./index-CMITgit5.js";const r=`<style>
 @media (max-width: 600px) {
     .contact-item {
         display: block !important; 
@@ -23,7 +23,7 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-B1SwqB
   <div style="margin-top: 0.5em; font-size: 1rem;">
     <span class="contact-item">klevisimeri11@gmail.com</span> 
     <span class="separator" style="color: #ccc; margin: 0 0.7em;">|</span>
-    <span class="contact-item">+36 70 538 4797</span>
+    <span class="contact-item">+383 44 165 634</span>
     <span class="separator" style="color: #ccc; margin: 0 0.7em;">|</span>
     <a href="https://github.com/KlevisImeri/" class="contact-item" style="text-decoration: none; color: #333; font-weight: normal;">
       github.com/KlevisImeri
@@ -61,9 +61,21 @@ import{_ as e}from"./MarkdownRenderer.vue_vue_type_script_setup_true_lang-B1SwqB
 
 
 ---
+#### [Personal Data]
+| Date of birth | Place of birth | Nationality | Marital status |
+|:---------------|:---------------|:------------|:---------------|
+| 08.05.2004 | Prishtina, Kosovo | Kosovar & Albanian | single |
+
+---
 #### [Education]
+| [ETH Zurich](https://ethz.ch/en.html) | Computer Science MSc | start on 2026.09 |
+|:---------------------------------------|:----------------------|:-------------------|
+
 | [Budapest University of Technology and Economics (BME)](https://www.bme.hu/en) | Computer Engineering BSc 2022.09.01 - 2026.01.31 | Graduated excellent with highest honours | GPA: 4.97/5.00 | Stipendium Hungaricum Scholarship |
 |:--------------------------------------------------------------------------|:---------------------|:--------|:----------------|:---|
+
+| [Mileniumi i Tretë Gymnasium](https://mileniumi3.net/) | Secondary High School Diploma, Natural Sciences<br>2019.09 – 2022.05 | Student and Ambassador of the Generation | GPA: 5.00/5.00 |
+|:------------------------------------------------------|:-----------------------------------------------------------------------------------------|:-------------------------|:---------------|
 
 ---
 #### [Research & Publications]
@@ -235,7 +247,7 @@ reports for Königs-Villen Immobilien GmbH.
 
 
 
-<!-- ##### High School -->
+#### [High School Awards]
 
 *   **1st Place -- National Physics Competition (Grade 12)** | 2022
     *   *Represented Kosovo in the International Physics Olympiad (IPhO) 2022 and the European Physics Olympiad (EuPhO) 2022.*
@@ -279,8 +291,15 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- <div style="text-align: center;"><i>General</i></div> -->
 <!-- <div style="text-align: center;"><div>DevOps | Full-Stack | Cloud Computing | Testing: Verification & Validation | Network Engineer | CyberOps </div> <br> -->
 <!---->
-<!-- <div style="text-align: center;"><i>Spoken languages</i></div> -->
-<!-- <div style="text-align: center;">English – Academic |Albanian - Native | German - Basic</div> <br> -->
+#### [Language Skills]
+| Language | Level | Certificate / Evidence |
+|:---------|:------|:-----------------------|
+| Albanian | Native | - |
+| English | Fluent (C2) | BSc studies fully in English; TOEFL iBT [107] (2022) |
+| German | Basic (A2) | Goethe-Zertifikat A2 [88/100] |
+| Hungarian | Basic | 3.5 years living in Budapest, Hungary |
+
+---
 <!---->
 <!-- <div style="text-align: center;"><i>Programming languages & domain specific languages:</i></div> -->
 <!-- <div style="text-align: center;">C/C++ | JavaScript/TypeScript | SQL/T-SQL | Java/Kotlin | C# | Python | Prolog | Lua | Verilog </div> <br> -->
@@ -297,4 +316,4 @@ reports for Königs-Villen Immobilien GmbH.
 <!-- <div style="text-align: center;"><i>Programming paradigms</i></div> -->
 <!-- <div style="text-align: center;">OOP | PROC</div> -->
 
-`,p=n({__name:"HomeView",setup(o){return(s,l)=>(a(),t(e,{content:i(r)},null,8,["content"]))}});export{p as default};
+`,m=n({__name:"HomeView",setup(o){return(s,l)=>(a(),t(e,{content:i(r)},null,8,["content"]))}});export{m as default};
