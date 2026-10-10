@@ -1,0 +1,11 @@
+[package]
+name = "xtask"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+axum = "0.8"
+dircpy = "0.3"
+tokio = { version = "1", features = ["rt-multi-thread", "net"] }
+tower-http = { version = "0.6", features = ["fs"] }

@@ -1,0 +1,9 @@
+[application]
+name = "about-me"
+asset_dir = "public"
+
+[web.app]
+title = "Klevis Imeri"
+
+[web.watcher]
+watch_path = ["src", "public", "tailwind.css"]

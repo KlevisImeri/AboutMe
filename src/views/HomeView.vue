@@ -1,8 +1,0 @@
-<script setup lang="ts">
-import MarkdownRenderer from '@/components/MarkdownRenderer.vue'
-import ResumeMarkdown from '@/assets/Resume.md?raw'
-</script>
-
-<template>
-  <MarkdownRenderer :content="ResumeMarkdown" />
-</template>

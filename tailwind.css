@@ -1,0 +1,65 @@
+@import "tailwindcss" source(none);
+@source "./src/**/*.rs";
+
+.content > * + * {
+  @apply mt-0 mb-4;
+}
+
+.content li + li {
+  @apply mt-1;
+}
+
+.content li > p + p {
+  @apply mt-6;
+}
+
+.content strong {
+  @apply font-semibold;
+}
+
+.content a {
+  @apply text-blue-600 font-semibold transition-colors duration-150;
+}
+
+.content strong a {
+  @apply font-bold;
+}
+
+.content h4 {
+  @apply leading-none text-base font-semibold mb-4 mt-6;
+}
+
+.content hr {
+  @apply border-t-3 border-gray-300 my-6;
+}
+
+.content ul {
+  @apply text-base pl-8 list-disc;
+}
+
+.content table {
+  @apply text-base border-gray-600;
+}
+
+.content th,
+.content td {
+  @apply border py-1 px-3;
+}
+
+.content th {
+  @apply text-left;
+}
+
+.content .contact-github {
+  @apply text-[#333] font-normal no-underline;
+}
+
+@media (max-width: 600px) {
+  .contact-item {
+    @apply block my-[0.2em];
+  }
+
+  .separator {
+    @apply hidden;
+  }
+}
