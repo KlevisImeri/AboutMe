@@ -385,8 +385,14 @@ fn Skills() -> Element {
             "Languages",
             "Rust, C, TypeScript, Lean, Rocq, React + Signals and their ecosystems",
         ),
-        ("Deployment", "Docker, Kubernetes"),
-        ("Systems & Tools", "Linux (Fedora), Git, Neovim"),
+        (
+            "Systems & Tools",
+            "Linux (Fedora), Git, Neovim, Docker, Kubernetes and their ecosystems",
+        ),
+        (
+            "Databases",
+            "PostgreSQL, SQLite, Oracle and their ecosystems",
+        ),
         (
             "Theory",
             "Formal Verification, Information Security, Algorithm Optimization",
