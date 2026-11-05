@@ -1,4 +1,6 @@
-# Rules
+<h1 align="center">aboutme.klevis.xyz</h1>
+
+## Rules
 
 - Keep this README clean; it only contains rules.
 - To run the dev server, build, or checks, use `cargo xtask` and nothing else:
