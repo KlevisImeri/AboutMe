@@ -78,7 +78,7 @@ fn Education() -> Element {
                 tr {
                     th { a { href: "https://ethz.ch/en.html", "ETH Zurich" } }
                     th { "Computer Science MSc" }
-                    th { "start on 2026.09" }
+                     th { "14 September 2026 – Present" }
                 }
             }
         }
@@ -90,8 +90,8 @@ fn Education() -> Element {
                             "Budapest University of Technology and Economics (BME)"
                         }
                     }
-                    th { "Computer Engineering BSc 2022.09.01 - 2026.01.31" }
-                    th { "Graduated excellent with highest honours" }
+                    th { "Computer Science Engineering BSc | 1 September 2022 – 6 January 2026" }
+                    th { "Graduated with highest honours" }
                     th { "GPA: 4.97/5.00" }
                     th { "Stipendium Hungaricum Scholarship" }
                 }
@@ -233,7 +233,7 @@ fn Experience() -> Element {
         p {
             strong { "Full-Stack Engineer" }
             " | " em { "January 2025 – September 2025" }
-            " | Germany Stuttgart Online and In-person during Summer"
+            " | Stuttgart, Germany — remote and on site during summer"
         }
         ul {
             li { "Developed and maintained a full-stack application using Vue.js and ASP.NET Core to manage worker logs, calculate wages, and generate GDPR-compliant audit reports for Königs-Villen Immobilien GmbH." }
@@ -419,7 +419,7 @@ fn Languages() -> Element {
         (
             "English",
             "Fluent (C2)",
-            "BSc studies fully in English; TOEFL iBT [107] (2022)",
+            "BSc completed in English; MSc studies in English",
         ),
         ("German", "Basic (A2)", "Goethe-Zertifikat A2 [88/100]"),
         (
