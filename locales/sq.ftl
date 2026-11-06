@@ -1,0 +1,106 @@
+# Përkthimet e CV-së në shqip. Emrat e përveçëm, URL-të dhe të dhënat numerike të përbashkëta mbeten në Rust.
+website-url = https://aboutme.klevis.xyz/sq/
+
+personal-data = Të dhënat personale
+date-of-birth = Data e lindjes
+place-of-birth = Vendi i lindjes
+nationality = Shtetësia
+marital-status = Gjendja martesore
+birthplace = Prishtinë, Kosovë
+citizenship = Kosovar & Shqiptar
+single = Beqar
+
+education = Arsimi
+eth-name = ETH Zürich
+eth-degree = Master në Shkenca Kompjuterike (MSc)
+eth-period = shtator 2026 – në vazhdim
+bme-period = shtator 2022 – janar 2026
+school-period = shtator 2019 – maj 2022
+bme-name = Universiteti i Teknologjisë dhe Ekonomisë i Budapestit (BME)
+bme-degree = Baçelor në Inxhinieri të Shkencave Kompjuterike (BSc)
+bme-honours = Diplomuar me nderimet më të larta
+gpa = Mesatarja: { $value }
+past-scholarship = Bursa Stipendium Hungaricum
+school-name = Gjimnazi Mileniumi i Tretë
+school-degree = Diplomë e shkollës së mesme, shkenca natyrore
+school-honours = Nxënës dhe ambasador i gjeneratës
+
+research = Kërkimi shkencor dhe publikimet
+tdk-title = Vendi i parë – Konferenca Shkencore Studentore (TDK)
+tdk-faculty = BME, Fakulteti i Inxhinierisë Elektrike dhe Informatikës
+tdk-paper = Punimi: “Improving Model Checking Portfolio Efficiency through Partial Result Transfer”
+tdk-section = Seksioni: Softuer
+view-paper = [Shiko punimin]
+thesis-title = Tema e diplomës baçelor
+thesis-description = Zgjerova kërkimin e TDK-së në një temë të plotë diplome.
+view-thesis = [Shiko temën]
+witness-title = Raport laboratorik: Implementimi i Software Witness 2.0
+research-group = BME, Grupi Kërkimor për Sisteme Tolerante ndaj Defekteve (FTSRG)
+witness-description = Integrova një format të ri të dëshmive të verifikimit në platformën Theta, duke përdorur automatin produkt të XCFA-ve.
+view-report = [Shiko raportin]
+publication-title = Publikim: San Vitale Challenge
+publication-description = Bashkautor i një punimi shkencor me grupin e programimit garues Vprog.
+publication-publisher = Botuar nga { $publisher }.
+view-chapter = [Shiko kapitullin]
+
+experience = Përvoja
+researcher-title = Studiues në verifikimin formal të softuerit
+researcher-period = dhjetor 2024 – janar 2026
+researcher-description = Punova për përmirësimin e efikasitetit dhe zgjerimin e funksionaliteteve të platformës së verifikimit të softuerit { $software } në { $group }, nën mbikëqyrjen e { $supervisor }. Në bashkëpunim me studiues të doktoraturës dhe kontribuues të tjerë, zhvillova metoda për transferimin e rezultateve të pjesshme ndërmjet algoritmeve të verifikimit dhe prezantova një heuristikë të re ndalimi. Ky kërkim fitoi vendin e parë në seksionin e softuerit të konferencës TDK dhe shërbeu si bazë për temën time të diplomës baçelor. Gjithashtu, implementova mbështetjen për { $witness } duke përdorur automatin produkt të XCFA-ve dhe punova në optimizimin e IMC-së në Theta. I vlerësova këto kontribute në { $infrastructure }, duke përdorur { $suite } dhe { $tool } për të siguruar matje të riprodhueshme të performancës.
+instructor-title = Instruktor i laboratorëve të bazave të të dhënave, BME
+instructor-period = shtator 2024 – janar 2026
+instructor-description = Udhëzova studentët në bazat e sistemeve të menaxhimit të bazave të të dhënave: modelimi ER, projektimi i skemave, normalizimi, algjebra relacionale dhe SQL i avancuar, përfshirë kontrollin e qasjes dhe integritetin; kontrollova gjithashtu saktësinë e detyrave laboratorike.
+engineer-title = Inxhinier Full-Stack
+engineer-period = janar 2025 – shtator 2025
+engineer-location = Stuttgart, Gjermani — në distancë dhe me prani fizike gjatë verës
+engineer-description = Zhvillova dhe mirëmbajta një aplikacion me Vue.js dhe ASP.NET Core për regjistrimin e punës së punëtorëve, llogaritjen e pagave dhe gjenerimin e raporteve të auditimit në përputhje me GDPR-në për Königs-Villen Immobilien GmbH.
+competitive-title = Programues garues
+competitive-period = janar 2023 – shtator 2026
+competitive-description = Si anëtar i grupit të programimit garues { $group } në BME, thellova njohuritë e mia në algoritme dhe struktura të të dhënave përmes takimeve javore të { $practice } dhe garave të programimit. Në vitin 2023 zura vendin e dytë në { $contest }, duke u kualifikuar në Garën Rajonale të Evropës Qendrore ({ $regional }), më pas vendin e gjashtë në vitin 2024 dhe të pestin në vitin 2025. Krahas këtyre aktiviteteve, bashkëpunova në projekte softuerike dhe kërkimore, përfshirë Qubo dhe San-Vitale, dhe isha bashkautor i një publikimi shkencor.
+
+projects = Projektet personale
+and = dhe
+simfn-description = Ndërtova një kalkulator grafik me ndërfaqe Swing, analizues leksikor e sintaksor, AST dhe vlerësues të implementuar nga e para, duke përdorur algoritmin shunting yard.
+integrator-description = Integrator2 është një version më i hershëm në C/C++, që mbështet edhe integrimin numerik.
+bloch-description = Simulator kuantik ndërveprues i sferës Bloch në shfletues.
+bloch-features = Mbështet veprime me matrica dhe vektorë, vizualizim 3D në kohë reale dhe skripte të personalizuara JavaScript.
+bloch-tools = Përdora Threlte dhe Math.js për vizualizim dhe llogaritje.
+view-specification = [Shiko specifikimin]
+view-website = [Shiko faqen]
+view-project = [Shiko { $name }]
+
+awards = Çmime të tjera
+school-awards = Çmimet gjatë shkollimit parauniversitar
+physics-award = Vendi i parë – Gara kombëtare e fizikës (klasa { $grade })
+physics-international = Përfaqësova Kosovën në Olimpiadën Ndërkombëtare të Fizikës (IPhO) { $year }.
+physics-european = Përfaqësova Kosovën në Olimpiadën Ndërkombëtare të Fizikës (IPhO) dhe Olimpiadën Evropiane të Fizikës (EuPhO) më 2022.
+math-award = Vendi i parë – Gara e diturisë në matematikë
+math-description = Vendi i parë në nivel komunal dhe shkollor, klasa IX.
+participation = Certifikatë pjesëmarrjeje
+math-olympiad = Olimpiada XI Matematike e Kosovës (klasa IX).
+
+skills = Aftësitë
+category = Kategoria
+programming-languages = Gjuhët
+programming-skills = Rust, C/C++, TypeScript, Lean, Rocq, React + Signals dhe ekosistemet e tyre
+systems = Sistemet dhe mjetet
+systems-skills = Linux (Fedora), Git, Neovim, Docker, Kubernetes dhe ekosistemet e tyre
+databases = Bazat e të dhënave
+database-skills = PostgreSQL, SQLite, Oracle dhe ekosistemet e tyre
+theory = Teoria
+theory-skills = Verifikimi formal, siguria e informacionit, optimizimi i algoritmeve
+
+language-skills = Njohuritë gjuhësore
+language = Gjuha
+level = Niveli
+evidence = Certifikimi / Përvoja
+albanian = Shqip
+english = Anglisht
+german = Gjermanisht
+hungarian = Hungarisht
+native = Gjuhë amtare
+fluent = Rrjedhshëm (C2)
+basic-a2 = Bazë (A2)
+basic = Bazë
+english-evidence = Studimet baçelor të përfunduara në anglisht; studimet master në anglisht
+hungarian-evidence = 3.5 vjet jetesë në Budapest, Hungari

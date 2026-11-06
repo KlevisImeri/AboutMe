@@ -29,6 +29,8 @@ fn run() -> Result<()> {
              \x20 check   run fmt and clippy\n\
              \x20 dev     run the Dioxus dev server\n\
              \x20 serve   serve dist/ at http://{ADDR}\n\n\
+             \x20 pdf [path]     export / to a PDF (default: CV_English.pdf; requires serve)\n\
+             \x20 pdf-sq [path]  export /sq/ to a PDF (default: CV_Albanian.pdf; requires serve)\n\n\
              commands can be chained, e.g. `cargo xtask build serve`"
         );
         return Ok(());
@@ -38,12 +40,25 @@ fn run() -> Result<()> {
         .parent()
         .ok_or("workspace directory not found")?;
 
-    for command in commands {
+    let mut commands = commands.into_iter().peekable();
+    while let Some(command) = commands.next() {
         match command.as_str() {
             "build" => build(root)?,
             "check" => check(root)?,
             "dev" => dev(root)?,
             "serve" => serve(root)?,
+            "pdf" | "pdf-sq" => {
+                let output = match commands.peek().map(String::as_str) {
+                    None | Some("build" | "check" | "dev" | "serve" | "pdf" | "pdf-sq") => None,
+                    Some(_) => commands.next().map(PathBuf::from),
+                };
+                let (route, filename) = if command == "pdf-sq" {
+                    ("/sq/", "CV_Albanian.pdf")
+                } else {
+                    ("/", "CV_English.pdf")
+                };
+                pdf(root, route, filename, output)?;
+            }
             other => return Err(format!("unknown task: {other}").into()),
         }
     }
@@ -104,7 +119,7 @@ fn build(root: &Path) -> Result<()> {
         return Err("Dioxus build failed; the previous dist was preserved".into());
     }
 
-    for page in ["index.html", "cooking/index.html"] {
+    for page in ["index.html", "sq/index.html", "cooking/index.html"] {
         if !public.join(page).is_file() {
             return Err(format!("Dioxus did not generate {page}; dist was preserved").into());
         }
@@ -116,7 +131,7 @@ fn build(root: &Path) -> Result<()> {
     }
     dircpy::copy_dir(&public, &dist)?;
 
-    println!("Generated dist/index.html and dist/cooking/index.html");
+    println!("Generated dist/index.html, dist/sq/index.html and dist/cooking/index.html");
     Ok(())
 }
 
@@ -150,6 +165,39 @@ fn serve(root: &Path) -> Result<()> {
             Ok::<(), std::io::Error>(())
         })?;
 
+    Ok(())
+}
+
+fn pdf(root: &Path, route: &str, filename: &str, output: Option<PathBuf>) -> Result<()> {
+    std::net::TcpStream::connect(ADDR).map_err(
+        |_| "Local server is unavailable; run `cargo xtask serve` in another terminal first",
+    )?;
+
+    let output = output.unwrap_or_else(|| root.join(filename));
+    let output = if output.is_absolute() {
+        output
+    } else {
+        std::env::current_dir()?.join(output)
+    };
+    if let Some(parent) = output.parent() {
+        fs::create_dir_all(parent)?;
+    }
+
+    let status = Command::new("chromium-browser")
+        .args([
+            "--headless",
+            "--disable-gpu",
+            "--no-pdf-header-footer",
+            "--virtual-time-budget=3000",
+        ])
+        .arg(format!("--print-to-pdf={}", output.display()))
+        .arg(format!("http://{ADDR}{route}"))
+        .stdin(Stdio::null())
+        .status()?;
+    if !status.success() {
+        return Err("Chromium PDF export failed".into());
+    }
+    println!("Exported {}", output.display());
     Ok(())
 }
 

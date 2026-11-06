@@ -1,0 +1,106 @@
+# English CV translations. Proper names, URLs and shared numeric data stay in Rust.
+website-url = https://aboutme.klevis.xyz/
+
+personal-data = Personal Data
+date-of-birth = Date of birth
+place-of-birth = Place of birth
+nationality = Nationality
+marital-status = Marital status
+birthplace = Prishtina, Kosovo
+citizenship = Kosovar & Albanian
+single = single
+
+education = Education
+eth-name = ETH Zurich
+eth-degree = Computer Science MSc
+eth-period = September 2026 – Present
+bme-period = September 2022 – January 2026
+school-period = September 2019 – May 2022
+bme-name = Budapest University of Technology and Economics (BME)
+bme-degree = Computer Science Engineering BSc
+bme-honours = Graduated with highest honours
+gpa = GPA: { $value }
+past-scholarship = Stipendium Hungaricum Scholarship
+school-name = Mileniumi i Tretë Gymnasium
+school-degree = Secondary High School Diploma, Natural Sciences
+school-honours = Student and Ambassador of the Generation
+
+research = Research & Publications
+tdk-title = 1st Place – Scientific Student Association Conference (TDK)
+tdk-faculty = BME, Faculty of Electrical Engineering and Informatics
+tdk-paper = Paper: “Improving Model Checking Portfolio Efficiency through Partial Result Transfer”
+tdk-section = Section: Software
+view-paper = [View Paper]
+thesis-title = BSc Thesis
+thesis-description = Expanded the TDK research into a full BSc Thesis.
+view-thesis = [View Thesis]
+witness-title = Lab Report: Software Witness 2.0 Implementation
+research-group = BME, Fault-Tolerant Systems Research Group (FTSRG)
+witness-description = Integrated a new witness format using the product automaton of XCFAs into the Theta framework.
+view-report = [View Report]
+publication-title = Publication: San Vitale Challenge
+publication-description = Co-authored research paper with the Vprog Competitive Programming Group.
+publication-publisher = Published in { $publisher }.
+view-chapter = [View Chapter]
+
+experience = Experience
+researcher-title = Software Formal Verification Researcher
+researcher-period = December 2024 – January 2026
+researcher-description = I worked on improving the efficiency and capabilities of the { $software } software verification framework at { $group }, under the supervision of { $supervisor }. In collaboration with PhD researchers and other contributors, I developed methods for transferring partial results between verification algorithms and introduced a new stopping heuristic. This research won first place in the software section of the TDK conference and formed the basis of my bachelor’s thesis. I also implemented support for { $witness } using the product automaton of XCFAs and worked on optimizing IMC in Theta. I evaluated these contributions on { $infrastructure } using { $suite } and { $tool } to obtain reproducible performance measurements.
+instructor-title = DB Lab Instructor BME
+instructor-period = September 2024 – January 2026
+instructor-description = Mentored students in DBMS fundamentals, covering ER modeling, schema design, normalization, relational algebra, and advanced SQL querying (including access control and integrity), while reviewing lab assessments for accuracy.
+engineer-title = Full-Stack Engineer
+engineer-period = January 2025 – September 2025
+engineer-location = Stuttgart, Germany — remote and on site during summer
+engineer-description = Developed and maintained a full-stack application using Vue.js and ASP.NET Core to manage worker logs, calculate wages, and generate GDPR-compliant audit reports for Königs-Villen Immobilien GmbH.
+competitive-title = Competitive Programmer
+competitive-period = January 2023 – September 2026
+competitive-description = As a member of BME’s { $group } competitive programming group, I deepened my knowledge of algorithms and data structures through weekly { $practice } sessions and programming contests. I placed second in { $contest } in 2023, qualifying for the Central European Regional Contest ({ $regional }), followed by sixth place in 2024 and fifth place in 2025. Alongside these activities, I collaborated on software and research projects, including Qubo and San-Vitale, and co-authored a research publication.
+
+projects = My Side Projects
+and = and
+simfn-description = Built a graphing calculator with a Swing interface and a lexer, parser, AST and evaluator implemented from scratch using the shunting yard algorithm.
+integrator-description = Integrator2 is an earlier C/C++ version that also supports numerical integration.
+bloch-description = Interactive quantum Bloch sphere simulator in browser.
+bloch-features = Supports matrix-vector ops, real-time 3D visualization, and custom JS scripting.
+bloch-tools = Used Threlte + Math.js for rendering and computation.
+view-specification = [View Specification]
+view-website = [View Website]
+view-project = [View { $name }]
+
+awards = Other Awards
+school-awards = High School Awards
+physics-award = 1st Place – National Physics Competition (Grade { $grade })
+physics-international = Represented Kosovo in the International Physics Olympiad (IPhO) { $year }.
+physics-european = Represented Kosovo in the International Physics Olympiad (IPhO) 2022 and the European Physics Olympiad (EuPhO) 2022.
+math-award = 1st Place – National Competition of Knowledge (Mathematics)
+math-description = Achieved 1st place at both Municipal and School levels (Grade IX).
+participation = Certificate of Participation
+math-olympiad = XI Mathematical Olympiad of Kosovo (Grade IX).
+
+skills = Skills
+category = Category
+programming-languages = Languages
+programming-skills = Rust, C/C++, TypeScript, Lean, Rocq, React + Signals and their ecosystems
+systems = Systems & Tools
+systems-skills = Linux (Fedora), Git, Neovim, Docker, Kubernetes and their ecosystems
+databases = Databases
+database-skills = PostgreSQL, SQLite, Oracle and their ecosystems
+theory = Theory
+theory-skills = Formal Verification, Information Security, Algorithm Optimization
+
+language-skills = Language Skills
+language = Language
+level = Level
+evidence = Certificate / Evidence
+albanian = Albanian
+english = English
+german = German
+hungarian = Hungarian
+native = Native
+fluent = Fluent (C2)
+basic-a2 = Basic (A2)
+basic = Basic
+english-evidence = BSc completed in English; MSc studies in English
+hungarian-evidence = 3.5 years living in Budapest, Hungary

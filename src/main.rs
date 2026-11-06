@@ -27,7 +27,7 @@ fn main() {
 enum Route {
     #[route("/")]
     Resume {},
-    #[route("/al")]
+    #[route("/sq")]
     ResumeAl {},
     #[route("/cooking/")]
     Cooking {},
@@ -37,7 +37,7 @@ enum Route {
 
 #[server(endpoint = "static_routes")]
 async fn static_routes() -> Result<Vec<String>, ServerFnError> {
-    Ok(vec!["/".into(), "/al".into(), "/cooking/".into()])
+    Ok(vec!["/".into(), "/sq".into(), "/cooking/".into()])
 }
 
 #[component]
@@ -52,7 +52,7 @@ fn App() -> Element {
 fn Resume() -> Element {
     rsx! {
         document::Title { "Klevis Imeri" }
-        pages::resume::ResumePage {}
+        pages::cv::ResumePage { locale: "en" }
     }
 }
 
@@ -60,7 +60,7 @@ fn Resume() -> Element {
 fn ResumeAl() -> Element {
     rsx! {
         document::Title { "Klevis Imeri — CV në shqip" }
-        pages::resume_al::ResumeAlPage {}
+        pages::cv::ResumePage { locale: "sq" }
     }
 }
 

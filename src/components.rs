@@ -21,7 +21,7 @@ pub fn SectionHeading(title: &'static str) -> Element {
 #[component]
 pub fn DataTable(children: Element) -> Element {
     rsx! {
-        div { class: "max-w-full overflow-x-auto",
+        div { class: "data-table max-w-full overflow-x-auto",
             table { {children} }
         }
     }

@@ -17,12 +17,19 @@
   @apply font-semibold;
 }
 
+.content .experience-heading {
+  @apply block w-full bg-slate-200 px-2 py-0.5 mx-0 mt-4 mb-2;
+  break-after: avoid;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
 .content a {
-  @apply text-blue-600 font-semibold transition-colors duration-150;
+  @apply text-blue-600 font-normal transition-colors duration-150;
 }
 
 .content strong a {
-  @apply font-bold;
+  @apply font-normal;
 }
 
 .content h4 {
@@ -38,28 +45,145 @@
 }
 
 .content table {
-  @apply text-base border-gray-600;
+  @apply w-full;
+  font-size: inherit;
+  border-collapse: collapse;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.content thead {
+  @apply bg-slate-200;
+}
+
+.content .personal-data table {
+  width: auto;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.content tbody tr + tr {
+  @apply border-t border-slate-200;
+}
+
+.content table:not(:has(tbody)) th {
+  @apply font-normal;
+}
+
+.content table:not(:has(tbody)) th:first-child {
+  @apply font-semibold;
+}
+
+.content .education-entry + .education-entry {
+  margin-top: 1rem;
+}
+
+.content .education-entry {
+  break-inside: avoid;
+}
+
+.content .education-meta {
+  @apply text-slate-600;
+}
+
+.content .data-table + .data-table {
+  margin-top: 1rem;
 }
 
 .content th,
 .content td {
-  @apply border py-1 px-3;
+  @apply border-0 py-0.5 px-2 align-top;
 }
 
 .content th {
-  @apply text-left;
+  @apply text-left font-semibold;
 }
 
 .content .contact-github {
   @apply text-[#333] font-normal no-underline;
 }
 
-@media (max-width: 600px) {
+@media screen {
+  .content {
+    max-width: 1050px;
+    margin-inline: auto;
+    overflow-wrap: anywhere;
+  }
+
+  .content th,
+  .content td {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 24px 16px;
+  }
+
   .contact-item {
     @apply block my-[0.2em];
   }
 
   .separator {
     @apply hidden;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  .content {
+    padding: 0;
+    zoom: 0.90;
+    font-size: 10pt;
+    line-height: 1.4;
+  }
+
+  .content .text-base,
+  .content ul,
+  .content h4 {
+    font-size: 10pt;
+  }
+
+  .content h4 {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    break-after: avoid;
+  }
+
+  .content hr {
+    margin: 14px 0;
+    break-after: avoid;
+  }
+
+  .content li,
+  .content table {
+    break-inside: avoid;
+  }
+
+  .content .data-table {
+    overflow: visible;
+    break-inside: avoid;
+  }
+
+  .content table {
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+
+  .content th,
+  .content td {
+    padding: 2px 8px;
+    overflow-wrap: anywhere;
+  }
+
+  .content .experience-heading {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    break-inside: avoid;
   }
 }
