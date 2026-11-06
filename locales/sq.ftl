@@ -44,6 +44,13 @@ publication-publisher = Botuar nga { $publisher }.
 view-chapter = [Shiko kapitullin]
 
 experience = Përvoja
+dentalhealth-title = Drejtues i teknologjisë dhe zhvillues softueri
+dentalhealth-period = prill 2026 – shtator 2026
+dentalhealth-development = Drejtova veprimtarinë teknologjike të klinikës, duke kontribuar drejtpërdrejt edhe në zhvillimin e softuerit. Ndërtova ndërfaqe me React, shërbime backend dhe mjete infrastrukturore me Rust, si dhe integrime me Python për API-të e inteligjencës artificiale, Google dhe Facebook për automatizimin e proceseve të punës. Rishkrova disa projekte në Rust për të unifikuar teknologjitë e përdorura dhe nisa migrimin e ndërfaqeve në Rust.
+dentalhealth-operations = Zhvillova agjentë të inteligjencës artificiale për automatizimin e proceseve të kompanisë dhe implementova softuer CRM dhe për menaxhimin e pacientëve ndërkombëtarë, në përputhje me GDPR-në. Zbatova teknika të shkencës së të dhënave në analizën e të dhënave të pacientëve për të orientuar strategjinë e reklamimit dhe për të optimizuar fushatat në Google Ads dhe Facebook Ads. Instalova skanerin CT të klinikës, konfigurova softuerin për shikimin e imazheve CT dhe instalova pajisje të tjera teknike.
+webvalto-title = Drejtues projekti dhe zhvillues softueri
+webvalto-period = janar 2026 – prill 2026
+webvalto-description = Drejtova dhe kontribuova në zhvillimin e mjeteve për vlerësimin e profesionistëve të IT-së përmes testeve praktike të infrastrukturës. Ndërtova dhe konfigurova mjedise komplekse testimi me kontejnerë Docker dhe makina virtuale, si dhe instalova e konfigurova baza të të dhënave Oracle. Zhvillova shërbime backend me Go, automatizime të infrastrukturës me Bash dhe ndërfaqe me React.
 researcher-title = Studiues në verifikimin formal të softuerit
 researcher-period = dhjetor 2024 – janar 2026
 researcher-description = Punova për përmirësimin e efikasitetit dhe zgjerimin e funksionaliteteve të platformës së verifikimit të softuerit { $software } në { $group }, nën mbikëqyrjen e { $supervisor }. Në bashkëpunim me studiues të doktoraturës dhe kontribuues të tjerë, zhvillova metoda për transferimin e rezultateve të pjesshme ndërmjet algoritmeve të verifikimit dhe prezantova një heuristikë të re ndalimi. Ky kërkim fitoi vendin e parë në seksionin e softuerit të konferencës TDK dhe shërbeu si bazë për temën time të diplomës baçelor. Gjithashtu, implementova mbështetjen për { $witness } duke përdorur automatin produkt të XCFA-ve dhe punova në optimizimin e IMC-së në Theta. I vlerësova këto kontribute në { $infrastructure }, duke përdorur { $suite } dhe { $tool } për të siguruar matje të riprodhueshme të performancës.
@@ -58,16 +65,28 @@ competitive-title = Programues garues
 competitive-period = janar 2023 – shtator 2026
 competitive-description = Si anëtar i grupit të programimit garues { $group } në BME, thellova njohuritë e mia në algoritme dhe struktura të të dhënave përmes takimeve javore të { $practice } dhe garave të programimit. Në vitin 2023 zura vendin e dytë në { $contest }, duke u kualifikuar në Garën Rajonale të Evropës Qendrore ({ $regional }), më pas vendin e gjashtë në vitin 2024 dhe të pestin në vitin 2025. Krahas këtyre aktiviteteve, bashkëpunova në projekte softuerike dhe kërkimore, përfshirë Qubo dhe San-Vitale, dhe isha bashkautor i një publikimi shkencor.
 
-projects = Projektet personale
+introduction = Prezantim
+intro-greeting = Përshëndetje, jam Klevisi.
+intro-description = Aktualisht po përqendrohem te metodat formale dhe te të kuptuarit se si të ndërtojmë abstraksione më të mira për sisteme të qëndrueshme dhe tolerante ndaj defekteve. Ndërsa modelet e mëdha gjuhësore gjenerojnë gjithnjë e më shumë kod, si ta specifikojmë saktësisht atë që duam të ndërtojmë dhe si ta verifikojmë që kodi i gjeneruar e përmbush atë specifikim?
+
+projects = Disa projekte
 and = dhe
 simfn-description = Ndërtova një kalkulator grafik me ndërfaqe Swing, analizues leksikor e sintaksor, AST dhe vlerësues të implementuar nga e para, duke përdorur algoritmin shunting yard.
-integrator-description = Integrator2 është një version më i hershëm në C/C++, që mbështet edhe integrimin numerik.
+integrator-description = Integrator implementon integrimin numerik, me një version fillestar në C dhe një version të mëvonshëm në C++.
+drag-description = Ndërtova një mjet të lehtë për terminalin Linux për të tërhequr skedarë në aplikacione me ndërfaqe grafike, me mbështetje native për X11 dhe Wayland, pa varësi nga GTK ose Qt.
+git-sync-description = Zhvillova një mjet CLI me Rust për validimin, regjistrimin dhe publikimin rekursiv të përditësimeve të referencave të nënmoduleve Git. Përdora Charon dhe Aeneas për të përkthyer funksionet e sigurisë dhe kontrolluesin e rrjedhës së punës nga Rust në Lean dhe provova veti për kushtet e validimit, trajtimin e dështimeve, kontrollet paraprake para ndryshimeve dhe përpunimin e nënmoduleve para moduleve prind, nën kontrata të qarta për shtresën e ndërveprimit me Git dhe mekanizmin e ekzekutimit.
+git-sync-disclaimer = Projekt eksperimental për të mësuar, në zhvillim aktiv.
 bloch-description = Simulator kuantik ndërveprues i sferës Bloch në shfletues.
 bloch-features = Mbështet veprime me matrica dhe vektorë, vizualizim 3D në kohë reale dhe skripte të personalizuara JavaScript.
 bloch-tools = Përdora Threlte dhe Math.js për vizualizim dhe llogaritje.
 view-specification = [Shiko specifikimin]
 view-website = [Shiko faqen]
 view-project = [Shiko { $name }]
+
+open-source = Kontribute në softuer me kod të hapur
+merged = Integruar
+compile-mode-description = Implementova trajtimin e sekuencave ANSI në daljen e kompilimit, përfshirë shfaqjen e ngjyrave, trajtimin e konfigurueshëm të OSC-së dhe ruajtjen e sekuencave të paplota ndërmjet blloqeve të daljes.
+vbot-description = Migrova botin Discord të VProg nga TypeScript në Rust, duke përdorur Poise dhe Serenity dhe duke ruajtur përputhshmërinë me të dhënat ekzistuese. Implementova planifikimin sipas zonave kohore, rikujtues për garat në Codeforces, përzgjedhjen e konfigurueshme të problemeve dhe ruajtjen e përkohshme të bashkësisë së problemeve në cache.
 
 awards = Çmime të tjera
 school-awards = Çmimet gjatë shkollimit parauniversitar

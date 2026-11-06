@@ -44,6 +44,13 @@ publication-publisher = Published in { $publisher }.
 view-chapter = [View Chapter]
 
 experience = Experience
+dentalhealth-title = Technology Lead & Developer
+dentalhealth-period = April 2026 – September 2026
+dentalhealth-development = Led the clinic’s technology operations while contributing directly to software development. Built React frontends, Rust backend services and infrastructure tooling, and Python integrations with AI, Google and Facebook APIs to automate workflows. Rewrote multiple projects in Rust to unify the technology stack and began a frontend migration to Rust.
+dentalhealth-operations = Developed AI agents to automate company workflows and implemented GDPR-compliant CRM and patient-management software supporting international patients. Applied data science techniques to patient-data analysis to inform advertising strategy and optimise Google Ads and Facebook Ads campaigns. Set up the clinic’s CT scanner, configured software for viewing CT scans, and installed other technical equipment.
+webvalto-title = Project Lead & Software Developer
+webvalto-period = January 2026 – April 2026
+webvalto-description = Led and contributed to the development of tools for assessing IT professionals through practical infrastructure tests. Built and configured complex test environments using Docker containers and virtual machines, and set up Oracle databases. Developed backend services in Go, infrastructure automation in Bash, and frontend interfaces in React.
 researcher-title = Software Formal Verification Researcher
 researcher-period = December 2024 – January 2026
 researcher-description = I worked on improving the efficiency and capabilities of the { $software } software verification framework at { $group }, under the supervision of { $supervisor }. In collaboration with PhD researchers and other contributors, I developed methods for transferring partial results between verification algorithms and introduced a new stopping heuristic. This research won first place in the software section of the TDK conference and formed the basis of my bachelor’s thesis. I also implemented support for { $witness } using the product automaton of XCFAs and worked on optimizing IMC in Theta. I evaluated these contributions on { $infrastructure } using { $suite } and { $tool } to obtain reproducible performance measurements.
@@ -58,16 +65,28 @@ competitive-title = Competitive Programmer
 competitive-period = January 2023 – September 2026
 competitive-description = As a member of BME’s { $group } competitive programming group, I deepened my knowledge of algorithms and data structures through weekly { $practice } sessions and programming contests. I placed second in { $contest } in 2023, qualifying for the Central European Regional Contest ({ $regional }), followed by sixth place in 2024 and fifth place in 2025. Alongside these activities, I collaborated on software and research projects, including Qubo and San-Vitale, and co-authored a research publication.
 
-projects = My Side Projects
+introduction = Introduction
+intro-greeting = Hi, I’m Klevis.
+intro-description = I’m currently focusing on formal methods and understanding how to build better abstractions for robust, fault-tolerant systems. As LLMs generate more and more code, how do we specify precisely what we want to build, and how do we verify that the generated code satisfies that specification?
+
+projects = Some Projects
 and = and
 simfn-description = Built a graphing calculator with a Swing interface and a lexer, parser, AST and evaluator implemented from scratch using the shunting yard algorithm.
-integrator-description = Integrator2 is an earlier C/C++ version that also supports numerical integration.
+integrator-description = Integrator implements numerical integration, with an original version in C and a later version in C++.
+drag-description = Built a lightweight Linux command-line utility for dragging files into GUI applications, with native X11 and Wayland support and no GTK or Qt dependencies.
+git-sync-description = Developed a Rust CLI to recursively validate, commit and push Git submodule reference updates. Used Charon and Aeneas to translate the Rust safety functions and workflow controller into Lean, and proved properties covering validation gates, failure handling, preflight-before-mutation ordering and child-before-parent processing, under explicit contracts for the Git wrappers and dispatcher.
+git-sync-disclaimer = Experimental learning project under active development.
 bloch-description = Interactive quantum Bloch sphere simulator in browser.
 bloch-features = Supports matrix-vector ops, real-time 3D visualization, and custom JS scripting.
 bloch-tools = Used Threlte + Math.js for rendering and computation.
 view-specification = [View Specification]
 view-website = [View Website]
 view-project = [View { $name }]
+
+open-source = Open Source Contributions
+merged = Merged
+compile-mode-description = Implemented ANSI escape-sequence handling for compilation output, including colour rendering, configurable OSC handling, and buffering of incomplete sequences across output chunks.
+vbot-description = Ported the VProg Discord bot from TypeScript to Rust using Poise and Serenity, preserving existing data compatibility. Implemented timezone-aware scheduling, Codeforces contest reminders, configurable problem selection, and problemset caching.
 
 awards = Other Awards
 school-awards = High School Awards

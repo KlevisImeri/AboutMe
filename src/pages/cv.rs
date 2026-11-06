@@ -25,14 +25,16 @@ fn ResumeContent(locale: String) -> Element {
         Content {
             ContactHeader {}
             div { class: "cv-details", lang: locale,
-                PersonalData {}
-                Education {}
-                Research {}
-                Experience {}
-                Projects {}
-                Awards {}
-                Skills {}
-                Languages {}
+                CvSection { id: "introduction", Introduction {} }
+                CvSection { id: "personal-data", PersonalData {} }
+                CvSection { id: "education", Education {} }
+                CvSection { id: "research", Research {} }
+                CvSection { id: "experience", Experience {} }
+                CvSection { id: "projects", Projects {} }
+                CvSection { id: "open-source", OpenSource {} }
+                CvSection { id: "awards", Awards {} }
+                CvSection { id: "skills", Skills {} }
+                CvSection { id: "language-skills", Languages {} }
                 hr {}
             }
         }
@@ -40,9 +42,67 @@ fn ResumeContent(locale: String) -> Element {
 }
 
 #[component]
-fn Heading(id: &'static str) -> Element {
+fn Introduction() -> Element {
+    rsx! {
+        p {
+            {t!("intro-greeting")} " " {t!("intro-description")}
+        }
+    }
+}
+
+#[component]
+fn CvSection(id: &'static str, children: Element) -> Element {
     let title = t!(id);
-    rsx! { hr {} h4 { "[{title}]" } }
+    rsx! {
+        details { class: "cv-section", open: true,
+            summary { class: "cv-section-heading",
+                hr {}
+                h4 { "[{title}]" }
+            }
+            {children}
+        }
+    }
+}
+
+#[component]
+fn CvEntry(heading: Element, children: Element, #[props(default = true)] shaded: bool) -> Element {
+    let heading_class = if shaded {
+        "cv-entry-heading experience-heading"
+    } else {
+        "cv-entry-heading"
+    };
+    rsx! {
+        details { class: "cv-entry", open: true,
+            summary { class: heading_class,
+                {heading}
+            }
+            {children}
+        }
+    }
+}
+
+#[component]
+fn CvTableRow(label: String, children: Element, #[props(default = 1)] columns: usize) -> Element {
+    let mut expanded = use_signal(|| true);
+    rsx! {
+        tr { class: if expanded() { "" } else { "cv-item-collapsed" },
+            td {
+                button {
+                    class: "cv-item-toggle",
+                    r#type: "button",
+                    "aria-label": label,
+                    "aria-expanded": expanded(),
+                    onclick: move |_| expanded.toggle(),
+                    "{label}"
+                }
+            }
+            if expanded() {
+                {children}
+            } else {
+                td { colspan: columns }
+            }
+        }
+    }
 }
 
 #[component]
@@ -67,17 +127,39 @@ fn ContactHeader() -> Element {
 
 #[component]
 fn PersonalData() -> Element {
+    let mut expanded = use_signal(|| [true; 4]);
+    let fields = [
+        (t!("date-of-birth"), "08.05.2004".to_string()),
+        (t!("place-of-birth"), t!("birthplace")),
+        (t!("nationality"), t!("citizenship")),
+        (t!("marital-status"), t!("single")),
+    ];
     rsx! {
-        Heading { id: "personal-data" }
         div { class: "personal-data",
         DataTable {
             thead { tr {
-                th { {t!("date-of-birth")} } th { {t!("place-of-birth")} }
-                th { {t!("nationality")} } th { {t!("marital-status")} }
+                for (index, (label, _)) in fields.iter().enumerate() {
+                    th { class: if expanded()[index] { "" } else { "cv-item-collapsed" },
+                        button {
+                            class: "cv-item-toggle",
+                            r#type: "button",
+                            "aria-label": label.clone(),
+                            "aria-expanded": expanded()[index],
+                            onclick: move |_| {
+                                let value = expanded()[index];
+                                expanded.write()[index] = !value;
+                            },
+                            "{label}"
+                        }
+                    }
+                }
             } }
             tbody { tr {
-                td { "08.05.2004" } td { {t!("birthplace")} }
-                td { {t!("citizenship")} } td { {t!("single")} }
+                for (index, (_, value)) in fields.iter().enumerate() {
+                    td { class: if expanded()[index] { "" } else { "cv-item-collapsed" },
+                        if expanded()[index] { "{value}" }
+                    }
+                }
             } }
         }
         }
@@ -87,27 +169,26 @@ fn PersonalData() -> Element {
 #[component]
 fn Education() -> Element {
     rsx! {
-        Heading { id: "education" }
         div { class: "education-entries",
-            div { class: "education-entry",
-                p { class: "experience-heading", strong { {t!("eth-name")} } " | " {t!("eth-period")} " | "
+            CvEntry {
+                heading: rsx! { strong { {t!("eth-name")} } " | " {t!("eth-period")} " | "
                     a { href: "https://ethz.ch/en.html", {t!("view-website")} }
-                }
+                },
                 p { {t!("eth-degree")} }
             }
-            div { class: "education-entry",
-                p { class: "experience-heading", strong { {t!("bme-name")} } " | " {t!("bme-period")} " | "
+            CvEntry {
+                heading: rsx! { strong { {t!("bme-name")} } " | " {t!("bme-period")} " | "
                     a { href: "https://www.bme.hu/en", {t!("view-website")} }
-                }
+                },
                 p { {t!("bme-degree")} }
                 p { class: "education-meta",
                     {t!("bme-honours")} " · " {t!("gpa", value: "4.97/5.00")} " · " {t!("past-scholarship")}
                 }
             }
-            div { class: "education-entry",
-                p { class: "experience-heading", strong { {t!("school-name")} } " | " {t!("school-period")} " | "
+            CvEntry {
+                heading: rsx! { strong { {t!("school-name")} } " | " {t!("school-period")} " | "
                     a { href: "https://mileniumi3.net/", {t!("view-website")} }
-                }
+                },
                 p { {t!("school-degree")} }
                 p { class: "education-meta",
                     {t!("school-honours")} " · " {t!("gpa", value: "5.00/5.00")}
@@ -120,39 +201,46 @@ fn Education() -> Element {
 #[component]
 fn Research() -> Element {
     rsx! {
-        Heading { id: "research" }
-        p { class: "experience-heading",
+        CvEntry {
+        heading: rsx! {
             strong { {t!("tdk-title")} } " | 2025 | "
             a { href: "https://tdk.bme.hu/conference/VIK/2025/sessions/sw/paper/Modellellenorzesi-portfoliok-hatekonysaganak", {t!("view-paper")} }
-        }
+        },
         p {
             em { {t!("tdk-faculty")} } br {}
             {t!("tdk-paper")} br {}
             em { {t!("tdk-section")} }
         }
-        p { class: "experience-heading",
+        }
+        CvEntry {
+        heading: rsx! {
             strong { {t!("thesis-title")} } " | 2025 | "
             a { href: "https://aboutme.klevis.xyz/thesis.pdf", {t!("view-thesis")} }
-        }
+        },
         p {
             {t!("thesis-description")}
         }
-        p { class: "experience-heading",
+        }
+        CvEntry {
+        heading: rsx! {
             strong { {t!("witness-title")} } " | 2025 | "
             a { href: "https://aboutme.klevis.xyz/witness-theta-paper.pdf", {t!("view-report")} }
-        }
+        },
         p {
             {t!("research-group")} br {}
             {t!("witness-description")}
         }
-        p { class: "experience-heading",
+        }
+        CvEntry {
+        heading: rsx! {
             strong { {t!("publication-title")} } " | 2025 | "
             a { href: "https://link.springer.com/chapter/10.1007/978-3-031-91572-7_16", {t!("view-chapter")} }
-        }
+        },
         p {
             em { "Automatic Reconstruction of Ancient Colored Glass Windows" } br {}
             {t!("publication-description")} br {}
             {t!("publication-publisher", publisher: "Springer Nature")}
+        }
         }
     }
 }
@@ -207,28 +295,50 @@ fn LinkedText(text: String) -> Element {
 #[component]
 fn Experience() -> Element {
     rsx! {
-        Heading { id: "experience" }
-        p { class: "experience-heading",
-            strong { {t!("researcher-title")} } " | " {t!("researcher-period")} " | BME, Budapest"
+        CvEntry {
+            heading: rsx! {
+                strong { {t!("dentalhealth-title")} } " | " {t!("dentalhealth-period")} " | DentalHealth | "
+                a { href: "https://dentalhealth.al", {t!("view-website")} }
+            },
+            p { {t!("dentalhealth-development")} }
+            p { {t!("dentalhealth-operations")} }
         }
+        CvEntry {
+            heading: rsx! {
+                strong { {t!("webvalto-title")} } " | " {t!("webvalto-period")} " | Webváltó | "
+                a { href: "https://www.webvalto.hu/en", {t!("view-website")} }
+            },
+            p { {t!("webvalto-description")} }
+        }
+        CvEntry {
+        heading: rsx! {
+            strong { {t!("researcher-title")} } " | " {t!("researcher-period")} " | BME, Budapest"
+        },
         p {
             LinkedText { text: t!("researcher-description", software: "§theta§", group: "§ftsrg§", supervisor: "§supervisor§", witness: "§witness§", infrastructure: "§benchcloud§", suite: "§benchmarks§", tool: "§benchexec§") }
         }
-        p { class: "experience-heading",
+        }
+        CvEntry {
+        heading: rsx! {
             strong { {t!("instructor-title")} }
             " | " {t!("instructor-period")} " | Budapest | "
             a { href: "https://www.db.bme.hu/databases/", {t!("view-website")} }
-        }
+        },
         p { {t!("instructor-description")} }
-        p { class: "experience-heading",
+        }
+        CvEntry {
+        heading: rsx! {
             strong { {t!("engineer-title")} } " | " {t!("engineer-period")} " | " {t!("engineer-location")}
-        }
+        },
         p { {t!("engineer-description")} }
-        p { class: "experience-heading",
-            strong { {t!("competitive-title")} } " | " {t!("competitive-period")} " | Budapest"
         }
+        CvEntry {
+        heading: rsx! {
+            strong { {t!("competitive-title")} } " | " {t!("competitive-period")} " | Budapest"
+        },
         p {
             LinkedText { text: t!("competitive-description", group: "§vprog§", practice: "Vprog Advance", contest: "§icpc§", regional: "§cerc§") }
+        }
         }
     }
 }
@@ -236,24 +346,70 @@ fn Experience() -> Element {
 #[component]
 fn Projects() -> Element {
     rsx! {
-        Heading { id: "projects" }
-        p { class: "experience-heading",
-            strong { "SimFN " {t!("and")} " Integrator2" }
+        CvEntry {
+        heading: rsx! {
+            strong { "SimFN " {t!("and")} " Integrator" }
             " | Java, C/C++ | "
             a { href: "https://github.com/KlevisImeri/SimFN", {t!("view-project", name: "SimFN")} }
             " | "
-            a { href: "https://github.com/KlevisImeri/Integrator2", {t!("view-project", name: "Integrator2")} }
-        }
+            a { href: "https://github.com/KlevisImeri/Integrator", {t!("view-project", name: "Integrator (C)")} }
+            " | "
+            a { href: "https://github.com/KlevisImeri/Integrator2", {t!("view-project", name: "Integrator (C++)")} }
+        },
         p { {t!("simfn-description")} br {} {t!("integrator-description")} }
-        p { class: "experience-heading",
+        }
+        CvEntry {
+            heading: rsx! {
+                strong { "drag" }
+                " | C, X11, Wayland | "
+                a { href: "https://github.com/KlevisImeri/drag", {t!("view-project", name: "drag")} }
+            },
+            p { {t!("drag-description")} }
+        }
+        CvEntry {
+            heading: rsx! {
+                strong { "git-sync-submodule-refs" }
+                " | Rust, Lean, Charon, Aeneas | "
+                a { href: "https://github.com/KlevisImeri/git-sync-submodule-refs", {t!("view-project", name: "git-sync-submodule-refs")} }
+            },
+            p { {t!("git-sync-description")} }
+            p { em { {t!("git-sync-disclaimer")} } }
+        }
+        CvEntry {
+        heading: rsx! {
             strong { "BlochSphere" }
             " | Svelte, Bun, Vite.js, Three.js | "
             a { href: "https://klevisimeri.github.io/BlochSphere/", {t!("view-project", name: "BlochSphere")} }
-        }
+        },
         p {
             {t!("bloch-description")} br {}
             {t!("bloch-features")} br {}
             {t!("bloch-tools")}
+        }
+        }
+    }
+}
+
+#[component]
+fn OpenSource() -> Element {
+    rsx! {
+        CvEntry {
+            heading: rsx! {
+                strong { "compile-mode.nvim" }
+                " | Lua | "
+                a { href: "https://github.com/ej-shafran/compile-mode.nvim/pull/140", "PR #140" }
+            },
+            p { {t!("compile-mode-description")} }
+        }
+        CvEntry {
+            heading: rsx! {
+                strong { "VProg Discord Bot" }
+                " | Rust | "
+                a { href: "https://github.com/bmevprog/vbot/pull/1", "PR #1" }
+                " | "
+                a { href: "https://github.com/bmevprog/vbot/pull/2", "PR #2" }
+            },
+            p { {t!("vbot-description")} }
         }
     }
 }
@@ -261,23 +417,29 @@ fn Projects() -> Element {
 #[component]
 fn Awards() -> Element {
     rsx! {
-        Heading { id: "awards" }
-        p { class: "experience-heading", strong { {t!("school-awards")} } }
+        CvEntry {
+        heading: rsx! { strong { {t!("school-awards")} } },
         for (grade, year) in [(12, 2022), (11, 2021), (10, 2020)] {
-                p { key: "{year}",
-                    strong { {t!("physics-award", grade: grade)} } " | {year}"
-                    br {}
-                    em {
+                CvEntry { key: "{year}", shaded: false,
+                    heading: rsx! { strong { {t!("physics-award", grade: grade)} } " | {year}" },
+                    p { em {
                         if year == 2022 {
                             {t!("physics-european")}
                         } else {
                             {t!("physics-international", year: year)}
                         }
-                    }
+                    } }
                 }
         }
-        p { strong { {t!("math-award")} } br {} {t!("math-description")} }
-        p { strong { {t!("participation")} } br {} {t!("math-olympiad")} }
+        CvEntry { shaded: false,
+            heading: rsx! { strong { {t!("math-award")} } },
+            p { {t!("math-description")} }
+        }
+        CvEntry { shaded: false,
+            heading: rsx! { strong { {t!("participation")} } },
+            p { {t!("math-olympiad")} }
+        }
+        }
     }
 }
 
@@ -290,12 +452,11 @@ fn Skills() -> Element {
         ("theory", "theory-skills"),
     ];
     rsx! {
-        Heading { id: "skills" }
         DataTable {
             thead { tr { th { {t!("category")} } th { {t!("skills")} } } }
             tbody {
                 for (category, description) in rows {
-                    tr { key: "{category}", td { {t!(category)} } td { {t!(description)} } }
+                    CvTableRow { key: "{category}", label: t!(category), td { {t!(description)} } }
                 }
             }
         }
@@ -304,16 +465,14 @@ fn Skills() -> Element {
 
 #[component]
 fn Languages() -> Element {
-    let title = t!("language-skills");
     rsx! {
-        h4 { "[{title}]" }
         DataTable {
             thead { tr { th { {t!("language")} } th { {t!("level")} } th { {t!("evidence")} } } }
             tbody {
-                tr { td { {t!("albanian")} } td { {t!("native")} } td { "–" } }
-                tr { td { {t!("english")} } td { {t!("fluent")} } td { {t!("english-evidence")} } }
-                tr { td { {t!("german")} } td { {t!("basic-a2")} } td { "Goethe-Zertifikat A2 [88/100]" } }
-                tr { td { {t!("hungarian")} } td { {t!("basic")} } td { {t!("hungarian-evidence")} } }
+                CvTableRow { label: t!("albanian"), columns: 2, td { {t!("native")} } td { "–" } }
+                CvTableRow { label: t!("english"), columns: 2, td { {t!("fluent")} } td { {t!("english-evidence")} } }
+                CvTableRow { label: t!("german"), columns: 2, td { {t!("basic-a2")} } td { "Goethe-Zertifikat A2 [88/100]" } }
+                CvTableRow { label: t!("hungarian"), columns: 2, td { {t!("basic")} } td { {t!("hungarian-evidence")} } }
             }
         }
     }

@@ -103,6 +103,61 @@
   @apply text-[#333] font-normal no-underline;
 }
 
+.cv-section-heading {
+  position: relative;
+  display: block;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cv-section-heading::-webkit-details-marker {
+  display: none;
+}
+
+.cv-section-heading:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.cv-entry-heading {
+  position: relative;
+  display: block;
+  list-style: none;
+  cursor: pointer;
+}
+
+.cv-entry-heading::-webkit-details-marker {
+  display: none;
+}
+
+.cv-entry-heading:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.cv-item-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+.cv-item-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.content .education-entries > .cv-entry {
+  break-inside: avoid;
+}
+
+.content .education-entries > .cv-entry + .cv-entry {
+  margin-top: 1rem;
+}
+
 @media screen {
   .content {
     max-width: 1050px;
@@ -131,6 +186,27 @@
 }
 
 @media print {
+  .cv-section:not([open]),
+  .cv-entry:not([open]),
+  .cv-item-collapsed {
+    display: none !important;
+  }
+
+  .cv-section-heading {
+    display: block;
+    cursor: default;
+    break-after: avoid;
+  }
+
+  .cv-item-toggle {
+    cursor: default;
+  }
+
+  .content .cv-entry-heading {
+    cursor: default;
+    break-after: avoid;
+  }
+
   @page {
     size: A4;
     margin: 12mm;
